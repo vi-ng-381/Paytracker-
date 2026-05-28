@@ -139,9 +139,10 @@
   .week-summary { font-family: 'DM Mono', monospace; font-size: 11px; color: var(--green); letter-spacing: 1px; }
 
   /* NET PAY */
-  .net-bar { position: fixed; bottom: 0; left: 0; right: 0; background: var(--surface); border-top: 1px solid var(--border); padding: 12px 20px; display: flex; align-items: center; justify-content: space-between; z-index: 200; }
-  .net-label { font-family: 'DM Mono', monospace; font-size: 11px; color: var(--muted); letter-spacing: 1px; text-transform: uppercase; }
-  .net-value { font-family: 'Bebas Neue', sans-serif; font-size: 26px; color: var(--accent); letter-spacing: 1px; }
+  .net-bar { position: fixed; bottom: 0; left: 0; right: 0; background: var(--surface); border-top: 1px solid var(--border); padding: 10px 16px calc(10px + env(safe-area-inset-bottom)); display: flex; align-items: center; gap: 10px; z-index: 200; }
+  .net-bar-left { display: flex; flex-direction: column; align-items: flex-start; flex: 1; }
+  .net-label { font-family: 'DM Mono', monospace; font-size: 10px; color: var(--muted); letter-spacing: 1px; text-transform: uppercase; }
+  .net-value { font-family: 'Bebas Neue', sans-serif; font-size: 24px; color: var(--accent); letter-spacing: 1px; line-height: 1.1; }
 
 
   /* COPY BTN */
@@ -420,8 +421,8 @@
   }
 
 
-  /* ── PIN LOGIN ── */
-  #pinScreen {
+  /* ── NAME LOGIN ── */
+  #nameScreen {
     position: fixed; inset: 0;
     background: var(--bg);
     z-index: 9999;
@@ -429,54 +430,39 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 24px;
+    padding: 32px 24px;
   }
-  #pinScreen.hidden { display: none; }
-  .pin-logo { font-family: 'Bebas Neue', sans-serif; font-size: 36px; letter-spacing: 4px; color: var(--accent); margin-bottom: 6px; }
-  .pin-sub { font-family: 'DM Mono', monospace; font-size: 11px; color: var(--muted); letter-spacing: 2px; text-transform: uppercase; margin-bottom: 40px; }
-  .pin-prompt { font-family: 'DM Sans', sans-serif; font-size: 15px; color: var(--text); margin-bottom: 24px; text-align: center; }
-  .pin-dots { display: flex; gap: 14px; margin-bottom: 32px; }
-  .pin-dot { width: 14px; height: 14px; border-radius: 50%; border: 2px solid var(--border); background: transparent; transition: all .2s; }
-  .pin-dot.filled { background: var(--accent); border-color: var(--accent); }
-  .pin-dot.error { background: var(--red); border-color: var(--red); }
-  .pin-keypad { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; width: 100%; max-width: 280px; }
-  .pin-key { background: var(--card); border: 1px solid var(--border); border-radius: 14px; padding: 18px; font-family: 'Bebas Neue', sans-serif; font-size: 24px; color: var(--text); cursor: pointer; text-align: center; transition: all .15s; user-select: none; }
-  .pin-key:active, .pin-key.pressed { background: var(--accent); color: #000; border-color: var(--accent); transform: scale(.95); }
-  .pin-key.del { font-size: 18px; font-family: 'DM Sans', sans-serif; color: var(--muted); }
-  .pin-key.empty { background: transparent; border-color: transparent; pointer-events: none; }
-  .pin-error { font-family: 'DM Mono', monospace; font-size: 11px; color: var(--red); letter-spacing: 1px; margin-top: 16px; min-height: 18px; text-align: center; }
-  .pin-reset-link { font-family: 'DM Mono', monospace; font-size: 10px; color: var(--muted); cursor: pointer; margin-top: 20px; letter-spacing: 1px; text-decoration: underline; }
+  #nameScreen.hidden { display: none; }
+  .ns-logo { font-family: 'Bebas Neue', sans-serif; font-size: 42px; letter-spacing: 4px; color: var(--accent); margin-bottom: 4px; text-align: center; }
+  .ns-tagline { font-family: 'DM Mono', monospace; font-size: 11px; color: var(--muted); letter-spacing: 2px; text-transform: uppercase; margin-bottom: 52px; text-align: center; }
+  .ns-card { background: var(--card); border: 1px solid var(--border); border-radius: 20px; padding: 28px 24px; width: 100%; max-width: 340px; }
+  .ns-greeting { font-family: 'Bebas Neue', sans-serif; font-size: 22px; letter-spacing: 2px; color: var(--text); margin-bottom: 6px; }
+  .ns-hint { font-family: 'DM Sans', sans-serif; font-size: 13px; color: var(--muted); margin-bottom: 20px; line-height: 1.4; }
+  .ns-input { width: 100%; background: var(--surface); border: 1px solid var(--border); border-radius: 12px; color: var(--text); font-family: 'DM Sans', sans-serif; font-size: 18px; padding: 14px 16px; outline: none; transition: border-color .2s; margin-bottom: 12px; }
+  .ns-input:focus { border-color: var(--accent); }
+  .ns-input::placeholder { color: var(--muted); font-size: 15px; }
+  .ns-btn { width: 100%; background: var(--accent); color: #000; border: none; border-radius: 12px; padding: 14px; font-family: 'Bebas Neue', sans-serif; font-size: 18px; letter-spacing: 2px; cursor: pointer; transition: opacity .2s; }
+  .ns-btn:active { opacity: .85; }
+  .ns-btn:disabled { opacity: .4; cursor: default; }
+  .ns-error { font-family: 'DM Mono', monospace; font-size: 11px; color: var(--red); letter-spacing: 1px; margin-top: 10px; min-height: 16px; text-align: center; }
+  .ns-footer { font-family: 'DM Mono', monospace; font-size: 10px; color: var(--muted); margin-top: 24px; text-align: center; letter-spacing: 1px; }
 
 </style>
 </head>
 <body>
 
-<div id="pinScreen">
-  <div class="pin-logo">SB Tracker</div>
-  <div class="pin-sub">Pay Tracker</div>
-  <div class="pin-prompt" id="pinPrompt">Enter your PIN</div>
-  <div class="pin-dots" id="pinDots">
-    <div class="pin-dot" id="pd0"></div>
-    <div class="pin-dot" id="pd1"></div>
-    <div class="pin-dot" id="pd2"></div>
-    <div class="pin-dot" id="pd3"></div>
+<div id="nameScreen">
+  <div class="ns-logo">SB Tracker</div>
+  <div class="ns-tagline">Personal Pay Tracker</div>
+  <div class="ns-card">
+    <div class="ns-greeting" id="nsGreeting">WELCOME BACK</div>
+    <div class="ns-hint" id="nsHint">Type your name to open your tracker.</div>
+    <input class="ns-input" id="nsInput" type="text" placeholder="Your name..." autocomplete="off"
+      oninput="nsValidate()" onkeydown="if(event.key==='Enter')nsSubmit()">
+    <button class="ns-btn" id="nsBtn" onclick="nsSubmit()" disabled>OPEN TRACKER →</button>
+    <div class="ns-error" id="nsError"></div>
   </div>
-  <div class="pin-keypad" id="pinKeypad">
-    <button class="pin-key" onclick="pinKey('1')">1</button>
-    <button class="pin-key" onclick="pinKey('2')">2</button>
-    <button class="pin-key" onclick="pinKey('3')">3</button>
-    <button class="pin-key" onclick="pinKey('4')">4</button>
-    <button class="pin-key" onclick="pinKey('5')">5</button>
-    <button class="pin-key" onclick="pinKey('6')">6</button>
-    <button class="pin-key" onclick="pinKey('7')">7</button>
-    <button class="pin-key" onclick="pinKey('8')">8</button>
-    <button class="pin-key" onclick="pinKey('9')">9</button>
-    <div class="pin-key empty"></div>
-    <button class="pin-key" onclick="pinKey('0')">0</button>
-    <button class="pin-key del" onclick="pinDel()">⌫</button>
-  </div>
-  <div class="pin-error" id="pinError"></div>
-  <div class="pin-reset-link" id="pinResetLink" onclick="pinReset()" style="display:none">Forgot PIN? Reset all data</div>
+  <div class="ns-footer" id="nsFooter"></div>
 </div>
 
 
@@ -2232,108 +2218,60 @@ function bulkDelete() {
 }
 
 
-/* ── PIN LOGIN ── */
-(function initPin() {
-  const stored = localStorage.getItem('sbt_pin');
-  const screen = document.getElementById('pinScreen');
-  const prompt = document.getElementById('pinPrompt');
-  const resetLink = document.getElementById('pinResetLink');
+/* ── NAME LOGIN ── */
+(function initNameScreen() {
+  const savedName = localStorage.getItem('sbt_username');
+  const screen = document.getElementById('nameScreen');
+  const greeting = document.getElementById('nsGreeting');
+  const hint = document.getElementById('nsHint');
+  const footer = document.getElementById('nsFooter');
+  const input = document.getElementById('nsInput');
 
-  if (!stored) {
-    prompt.textContent = 'Set a 4-digit PIN';
-    window._pinMode = 'setup';
-    window._pinConfirm = null;
+  if (savedName) {
+    greeting.textContent = 'WELCOME BACK, ' + savedName.toUpperCase() + '!';
+    hint.textContent = 'Type your name to confirm it\'s you.';
+    footer.textContent = 'Not ' + savedName + '? Clear the field and enter a different name.';
   } else {
-    prompt.textContent = 'Enter your PIN';
-    window._pinMode = 'enter';
-    resetLink.style.display = '';
+    greeting.textContent = 'WELCOME!';
+    hint.textContent = 'Enter your name to get started. This keeps your data personal to you.';
+    footer.textContent = 'Your name is saved locally on this device.';
   }
-  window._pinInput = '';
+
+  // Auto-focus the input
+  setTimeout(() => input.focus(), 100);
 })();
 
-function pinKey(digit) {
-  if (window._pinInput.length >= 4) return;
-  window._pinInput += digit;
-  pinUpdateDots();
-  if (window._pinInput.length === 4) {
-    setTimeout(pinSubmit, 120);
-  }
+function nsValidate() {
+  const val = document.getElementById('nsInput').value.trim();
+  document.getElementById('nsBtn').disabled = val.length < 1;
+  document.getElementById('nsError').textContent = '';
 }
 
-function pinDel() {
-  window._pinInput = window._pinInput.slice(0, -1);
-  pinUpdateDots();
-  document.getElementById('pinError').textContent = '';
-}
+function nsSubmit() {
+  const val = document.getElementById('nsInput').value.trim();
+  if (!val) return;
+  const savedName = localStorage.getItem('sbt_username');
 
-function pinUpdateDots(state) {
-  for (let i = 0; i < 4; i++) {
-    const d = document.getElementById('pd' + i);
-    d.className = 'pin-dot';
-    if (state === 'error') d.classList.add('error');
-    else if (i < window._pinInput.length) d.classList.add('filled');
-  }
-}
-
-function pinSubmit() {
-  const stored = localStorage.getItem('sbt_pin');
-  const err = document.getElementById('pinError');
-  const prompt = document.getElementById('pinPrompt');
-
-  if (window._pinMode === 'setup') {
-    if (!window._pinConfirm) {
-      window._pinConfirm = window._pinInput;
-      window._pinInput = '';
-      prompt.textContent = 'Confirm your PIN';
-      pinUpdateDots();
-      err.textContent = '';
-      return;
-    } else {
-      if (window._pinInput === window._pinConfirm) {
-        localStorage.setItem('sbt_pin', window._pinInput);
-        pinUnlock();
-      } else {
-        err.textContent = "PINs don't match. Try again.";
-        window._pinConfirm = null;
-        window._pinInput = '';
-        prompt.textContent = 'Set a 4-digit PIN';
-        pinUpdateDots('error');
-        setTimeout(() => pinUpdateDots(), 600);
-      }
+  if (savedName) {
+    // Must match saved name (case-insensitive)
+    if (val.toLowerCase() !== savedName.toLowerCase()) {
+      document.getElementById('nsError').textContent = 'Name doesn\'t match. Try again.';
+      document.getElementById('nsInput').style.borderColor = 'var(--red)';
+      setTimeout(() => {
+        document.getElementById('nsInput').style.borderColor = '';
+      }, 1000);
       return;
     }
+  } else {
+    // First time — save this name
+    localStorage.setItem('sbt_username', val);
+    // Also pre-fill the worker name in settings
+    const s = JSON.parse(localStorage.getItem('sbt_settings_v5') || '{}');
+    if (!s.workerName) { s.workerName = val; localStorage.setItem('sbt_settings_v5', JSON.stringify(s)); }
   }
 
-  if (window._pinMode === 'enter') {
-    if (window._pinInput === stored) {
-      pinUnlock();
-    } else {
-      err.textContent = 'Wrong PIN. Try again.';
-      window._pinInput = '';
-      pinUpdateDots('error');
-      setTimeout(() => pinUpdateDots(), 600);
-    }
-  }
+  document.getElementById('nameScreen').classList.add('hidden');
 }
-
-function pinUnlock() {
-  document.getElementById('pinScreen').classList.add('hidden');
-  document.getElementById('pinError').textContent = '';
-}
-
-function pinReset() {
-  if (!confirm('This will delete ALL your data and PIN. Cannot be undone.')) return;
-  localStorage.clear();
-  location.reload();
-}
-
-// Allow keyboard input for desktop
-document.addEventListener('keydown', function(e) {
-  if (document.getElementById('pinScreen').classList.contains('hidden')) return;
-  if (e.key >= '0' && e.key <= '9') pinKey(e.key);
-  if (e.key === 'Backspace') pinDel();
-  if (e.key === 'Enter' && window._pinInput.length === 4) pinSubmit();
-});
 
 function render() {
   buildTabs();
