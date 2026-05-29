@@ -38,7 +38,6 @@
   .tab-edit { font-size: 11px; line-height: 1; background: none; border: none; cursor: pointer; padding: 0; opacity: 0.4; transition: opacity .15s; }
   .tab-btn:hover .tab-edit { opacity: 1; }
 
-  /* SUMMARY */
   .summary-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; padding: 16px; }
   .sum-card { background: var(--card); border: 1px solid var(--border); border-radius: 14px; padding: 14px 16px; position: relative; overflow: hidden; }
   .sum-card.full { grid-column: 1 / -1; }
@@ -51,13 +50,11 @@
   .sum-value.green { color: var(--green); }
   .sum-sub { font-size: 10px; color: var(--muted); margin-top: 3px; }
 
-  /* SECTION HEADER */
   .section-header { display: flex; align-items: center; justify-content: space-between; padding: 8px 16px 10px; }
   .section-title { font-family: 'Bebas Neue', sans-serif; font-size: 18px; letter-spacing: 2px; color: var(--muted); }
   .icon-btn { background: var(--accent); color: #000; border: none; border-radius: 50%; width: 32px; height: 32px; font-size: 20px; cursor: pointer; display: flex; align-items: center; justify-content: center; font-weight: 700; transition: transform .15s; flex-shrink: 0; }
   .icon-btn:active { transform: scale(.9); }
 
-  /* DEDUCTIONS */
   .deduction-section { margin: 0 16px 16px; background: var(--card); border: 1px solid var(--border); border-radius: 16px; padding: 16px; }
   .ded-header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 14px; }
   .ded-title { font-family: 'Bebas Neue', sans-serif; font-size: 16px; letter-spacing: 2px; color: var(--muted); }
@@ -66,25 +63,19 @@
 
   .ded-row { display: grid; grid-template-columns: 1fr auto auto; align-items: center; gap: 8px; padding: 6px 0; border-bottom: 1px solid var(--border); }
   .ded-row:last-of-type { border-bottom: none; }
-
   .ded-name { background: transparent; border: none; color: var(--text); font-family: 'DM Sans', sans-serif; font-size: 14px; outline: none; width: 100%; padding: 4px 0; border-bottom: 1px solid transparent; transition: border-color .2s; }
   .ded-name:focus { border-bottom-color: var(--accent); }
   .ded-name::placeholder { color: var(--muted); font-size: 13px; }
-
   .ded-amt { background: transparent; border: none; color: var(--green); font-family: 'DM Mono', monospace; font-size: 14px; font-weight: 500; outline: none; width: 120px; text-align: right; padding: 4px 0; border-bottom: 1px solid transparent; transition: border-color .2s; }
   .ded-amt:focus { border-bottom-color: var(--accent); }
   .ded-amt::placeholder { color: var(--muted); font-size: 12px; }
-
   .ded-del { background: transparent; border: none; color: var(--border); font-size: 20px; line-height: 1; cursor: pointer; padding: 0 2px; transition: color .2s; }
   .ded-del:hover { color: var(--red); }
-
   .ded-empty { font-family: 'DM Mono', monospace; font-size: 11px; color: var(--muted); text-align: center; padding: 14px 0 6px; letter-spacing: 1px; }
-
   .ded-footer { display: flex; justify-content: space-between; align-items: center; margin-top: 12px; padding-top: 12px; border-top: 1px solid var(--border); }
   .ded-footer-label { font-family: 'DM Mono', monospace; font-size: 10px; color: var(--muted); letter-spacing: 1px; text-transform: uppercase; }
   .ded-footer-val { font-family: 'Bebas Neue', sans-serif; font-size: 20px; color: var(--red); }
 
-  /* ADD ENTRY FORM */
   .form-panel { background: var(--card); border: 1px solid var(--border); border-radius: 16px; margin: 0 16px 16px; padding: 16px; display: none; }
   .form-panel.open { display: block; animation: slideIn .2s ease; }
   .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-bottom: 10px; }
@@ -94,12 +85,9 @@
   .form-group input, .form-group select { background: var(--surface); border: 1px solid var(--border); border-radius: 8px; color: var(--text); font-family: 'DM Mono', monospace; font-size: 13px; padding: 9px 10px; outline: none; transition: border-color .2s; width: 100%; }
   .form-group input:focus, .form-group select:focus { border-color: var(--accent); }
   .form-group select option { background: var(--card); }
-  .shift-block { border: 1px dashed var(--border); border-radius: 10px; padding: 12px; margin-bottom: 10px; }
-  .shift-label { font-size: 10px; color: var(--accent); letter-spacing: 1px; font-family: 'DM Mono', monospace; text-transform: uppercase; margin-bottom: 8px; }
   .btn-save { background: var(--accent); color: #000; border: none; border-radius: 10px; padding: 12px; width: 100%; font-family: 'DM Mono', monospace; font-size: 13px; font-weight: 600; letter-spacing: 1px; cursor: pointer; }
   .btn-save:active { opacity: .8; }
 
-  /* ENTRIES */
   .entries-list { padding: 0 16px; }
   .entry-card { background: var(--card); border: 1px solid var(--border); border-radius: 14px; padding: 14px; margin-bottom: 10px; display: flex; align-items: flex-start; gap: 12px; position: relative; animation: slideIn .25s ease; }
   @keyframes slideIn { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
@@ -125,7 +113,6 @@
   .empty-state { text-align: center; padding: 40px 20px; color: var(--muted); font-family: 'DM Mono', monospace; font-size: 12px; letter-spacing: 1px; }
   .empty-icon { font-size: 36px; margin-bottom: 10px; }
 
-  /* ONBOARDING */
   .onboarding-card { margin: 0 16px 16px; background: var(--card); border: 1px solid var(--accent); border-radius: 16px; padding: 24px 20px; animation: slideIn .3s ease; }
   .onboarding-icon { font-size: 36px; text-align: center; margin-bottom: 12px; }
   .onboarding-title { font-family: 'Bebas Neue', sans-serif; font-size: 22px; letter-spacing: 2px; color: var(--accent); text-align: center; margin-bottom: 20px; }
@@ -133,19 +120,15 @@
   .onboarding-step { display: flex; align-items: center; gap: 12px; font-size: 14px; color: var(--text); line-height: 1.4; }
   .step-num { background: var(--accent); color: #000; font-family: 'Bebas Neue', sans-serif; font-size: 16px; width: 28px; height: 28px; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
 
-  /* WEEK VIEW */
   .week-header { display: flex; align-items: center; justify-content: space-between; padding: 10px 4px 6px; margin-bottom: 6px; border-bottom: 1px solid var(--border); }
   .week-label { font-family: 'Bebas Neue', sans-serif; font-size: 14px; letter-spacing: 2px; color: var(--muted); }
   .week-summary { font-family: 'DM Mono', monospace; font-size: 11px; color: var(--green); letter-spacing: 1px; }
 
-  /* NET PAY */
   .net-bar { position: fixed; bottom: 0; left: 0; right: 0; background: var(--surface); border-top: 1px solid var(--border); padding: 10px 16px calc(10px + env(safe-area-inset-bottom)); display: flex; align-items: center; gap: 10px; z-index: 200; }
   .net-bar-left { display: flex; flex-direction: column; align-items: flex-start; flex: 1; }
   .net-label { font-family: 'DM Mono', monospace; font-size: 10px; color: var(--muted); letter-spacing: 1px; text-transform: uppercase; }
   .net-value { font-family: 'Bebas Neue', sans-serif; font-size: 24px; color: var(--accent); letter-spacing: 1px; line-height: 1.1; }
 
-
-  /* COPY BTN */
   .copy-btn { background: var(--accent); color: #000; border: none; border-radius: 10px; padding: 8px 18px; font-family: 'DM Mono', monospace; font-size: 12px; font-weight: 700; letter-spacing: 1px; cursor: pointer; transition: all .2s; white-space: nowrap; }
   .copy-btn.done { background: var(--green); color: #fff; }
 
@@ -153,7 +136,6 @@
   ::-webkit-scrollbar-track { background: var(--bg); }
   ::-webkit-scrollbar-thumb { background: var(--border); border-radius: 2px; }
 
-  /* SHIFT ROWS */
   .shift-row { display:grid; grid-template-columns:1fr 1fr 1fr auto; gap:8px; align-items:end; background:var(--surface); border:1px solid var(--border); border-radius:12px; padding:12px; margin-bottom:8px; }
   .shift-row .form-group label { font-size:10px; color:var(--muted); letter-spacing:1px; text-transform:uppercase; font-family:'DM Mono',monospace; display:block; margin-bottom:5px; }
   .shift-row input[type="time"] { background:var(--card); border:1px solid var(--border); border-radius:8px; color:var(--text); font-family:'DM Mono',monospace; font-size:14px; padding:10px 8px; outline:none; transition:border-color .2s; width:100%; -webkit-appearance:none; color-scheme:dark; }
@@ -161,7 +143,6 @@
   .shift-row input[type="number"] { background:var(--card); border:1px solid var(--border); border-radius:8px; color:var(--accent); font-family:'DM Mono',monospace; font-size:14px; padding:10px 8px; outline:none; transition:border-color .2s; width:100%; text-align:right; }
   .shift-row input[type="number"]:focus { border-color:var(--accent); }
   .shift-row .ded-del { margin-bottom:0; align-self:center; }
-  .shift-row-num { font-family:'DM Mono',monospace; font-size:10px; color:var(--accent); letter-spacing:1px; margin-bottom:6px; }
   .bulk-bar { display: none; align-items: center; justify-content: space-between; padding: 10px 16px; background: var(--surface); border-bottom: 1px solid var(--border); }
   .bulk-bar.active { display: flex; }
   .bulk-label { font-family: 'DM Mono', monospace; font-size: 11px; color: var(--muted); letter-spacing: 1px; }
@@ -171,10 +152,9 @@
   .select-toggle-btn.active { border-color: var(--red); color: var(--red); }
   .entry-card.selectable { cursor: pointer; }
   .entry-card.selected { border-color: var(--red); background: rgba(224,85,85,.08); }
-  .entry-card.overtime { border-color: var(--accent2); }
-  .entry-card.overtime .date-badge { border-color: var(--accent2); }
   .overtime-badge { display: inline-block; font-family: 'DM Mono', monospace; font-size: 9px; letter-spacing: 1px; color: var(--accent2); background: rgba(224,135,74,.12); border: 1px solid rgba(224,135,74,.3); border-radius: 4px; padding: 1px 5px; margin-left: 4px; text-transform: uppercase; }
   .absent-badge { display: inline-block; font-family: 'DM Mono', monospace; font-size: 9px; letter-spacing: 1px; color: var(--red); background: rgba(224,85,85,.12); border: 1px solid rgba(224,85,85,.3); border-radius: 4px; padding: 1px 5px; margin-left: 4px; text-transform: uppercase; }
+  .holiday-badge { display: inline-block; font-family: 'DM Mono', monospace; font-size: 9px; letter-spacing: 1px; color: var(--accent); background: rgba(245,200,66,.12); border: 1px solid rgba(245,200,66,.3); border-radius: 4px; padding: 1px 5px; margin-left: 4px; text-transform: uppercase; }
   .entry-card.absent-day { opacity: 0.65; border-style: dashed; }
   .entry-card.absent-day .date-badge { opacity: 0.5; }
   .entry-card.ot-day { border-color: var(--accent2); }
@@ -183,7 +163,6 @@
   .select-mode .entry-checkbox { display: flex; }
   .entry-card.selected .entry-checkbox { background: var(--red); border-color: var(--red); color: #fff; font-size: 12px; }
 
-  /* SETTINGS PANEL */
   .settings-overlay { display:none; position:fixed; inset:0; background:rgba(0,0,0,.6); z-index:300; }
   .settings-overlay.open { display:block; }
   .settings-drawer { position:fixed; bottom:0; left:0; right:0; background:var(--surface); border-radius:20px 20px 0 0; padding:24px 20px 40px; z-index:301; max-height:85vh; overflow-y:auto; transform:translateY(100%); transition:transform .3s ease; }
@@ -202,18 +181,6 @@
   .toggle-sw .knob { width:20px; height:20px; border-radius:50%; background:#fff; position:absolute; top:2px; left:2px; transition:left .2s; }
   .toggle-sw.on .knob { left:22px; }
   .gear-btn { background:transparent; border:none; font-size:20px; cursor:pointer; color:var(--muted); padding:2px 4px; line-height:1; }
-  .rate-band-grid { display:grid; grid-template-columns:1fr 1fr; gap:8px; }
-  .rate-band-item { background:var(--card); border:1px solid var(--border); border-radius:10px; padding:10px 12px; }
-  .rate-band-item label { font-family:'DM Mono',monospace; font-size:10px; color:var(--muted); letter-spacing:1px; display:block; margin-bottom:6px; }
-  .rate-band-item input { background:transparent; border:none; border-bottom:1px solid var(--border); color:var(--accent); font-family:'DM Mono',monospace; font-size:14px; font-weight:600; outline:none; width:100%; padding:2px 0; transition:border-color .2s; }
-  .rate-band-item input:focus { border-bottom-color:var(--accent); }
-  .settings-save-btn { background:var(--accent); color:#000; border:none; border-radius:10px; padding:13px; width:100%; font-family:'DM Mono',monospace; font-size:13px; font-weight:700; letter-spacing:1px; cursor:pointer; margin-top:8px; }
-
-  .band-row { display:grid; grid-template-columns:1fr 1fr 1fr auto; gap:8px; align-items:end; margin-bottom:10px; }
-  .band-row .form-group label { font-size:10px; color:var(--muted); letter-spacing:1px; text-transform:uppercase; font-family:'DM Mono',monospace; display:block; margin-bottom:5px; }
-  .band-row input { background:var(--surface); border:1px solid var(--border); border-radius:8px; color:var(--text); font-family:'DM Mono',monospace; font-size:13px; padding:8px 8px; outline:none; transition:border-color .2s; width:100%; }
-  .band-row input:focus { border-color:var(--accent); }
-  .band-row .ded-del { margin-bottom:2px; }
   .pay-mode-tabs { display:flex; gap:6px; margin-top:4px; }
   .pay-mode-tab { flex:1; font-family:'DM Mono',monospace; font-size:11px; letter-spacing:1px; padding:8px 4px; border-radius:10px; border:1px solid var(--border); background:transparent; color:var(--muted); cursor:pointer; transition:all .2s; text-transform:uppercase; }
   .pay-mode-tab.active { background:var(--accent); color:#000; border-color:var(--accent); font-weight:700; }
@@ -222,220 +189,67 @@
   .bonus-name:focus { border-color:var(--accent); }
   .bonus-amt { background:var(--surface); border:1px solid var(--border); border-radius:8px; color:var(--accent); font-family:'DM Mono',monospace; font-size:13px; padding:8px 10px; outline:none; width:100%; text-align:right; transition:border-color .2s; }
   .bonus-amt:focus { border-color:var(--accent); }
-  /* ── VIETNAMESE FONT OVERRIDES ──
-     Bebas Neue & DM Mono không hỗ trợ dấu tiếng Việt.
-     Khi dùng tiếng Việt, chuyển sang DM Sans + bỏ text-transform:uppercase */
-  .lang-vi .sum-label,
-  .lang-vi .ded-footer-label,
-  .lang-vi .form-group label,
-  .lang-vi .shift-row .form-group label,
-  .lang-vi .band-row .form-group label,
-  .lang-vi .settings-section-label,
-  .lang-vi .shift-label,
-  .lang-vi .net-label {
-    font-family: 'DM Sans', sans-serif;
-    text-transform: none;
-    letter-spacing: 0.3px;
-    font-weight: 600;
-    font-size: 11px;
-  }
-  .lang-vi .section-title,
-  .lang-vi .ded-title,
-  .lang-vi .settings-title,
-  .lang-vi .onboarding-title,
-  .lang-vi .week-label {
-    font-family: 'DM Sans', sans-serif;
-    font-weight: 700;
-    letter-spacing: 0.5px;
-  }
-  .lang-vi .tab-btn {
-    text-transform: none;
-    letter-spacing: 0.3px;
-  }
-  .lang-vi .pay-mode-tab {
-    text-transform: none;
-    letter-spacing: 0.3px;
-  }
-  .lang-vi .btn-save,
-  .lang-vi .settings-save-btn,
-  .lang-vi .bulk-del-btn {
-    letter-spacing: 0.3px;
-  }
-  .lang-vi .overtime-badge,
-  .lang-vi .absent-badge {
-    text-transform: none;
-    letter-spacing: 0.3px;
-  }
+  .band-row { display:grid; grid-template-columns:1fr 1fr 1fr auto; gap:8px; align-items:end; margin-bottom:10px; }
+  .band-row .form-group label { font-size:10px; color:var(--muted); letter-spacing:1px; text-transform:uppercase; font-family:'DM Mono',monospace; display:block; margin-bottom:5px; }
+  .band-row input { background:var(--surface); border:1px solid var(--border); border-radius:8px; color:var(--text); font-family:'DM Mono',monospace; font-size:13px; padding:8px 8px; outline:none; transition:border-color .2s; width:100%; }
+  .band-row input:focus { border-color:var(--accent); }
+  .band-row .ded-del { margin-bottom:2px; }
 
+  .lang-vi .sum-label, .lang-vi .ded-footer-label, .lang-vi .form-group label,
+  .lang-vi .shift-row .form-group label, .lang-vi .band-row .form-group label,
+  .lang-vi .settings-section-label, .lang-vi .shift-label, .lang-vi .net-label {
+    font-family: 'DM Sans', sans-serif; text-transform: none; letter-spacing: 0.3px; font-weight: 600; font-size: 11px;
+  }
+  .lang-vi .section-title, .lang-vi .ded-title, .lang-vi .settings-title,
+  .lang-vi .onboarding-title, .lang-vi .week-label {
+    font-family: 'DM Sans', sans-serif; font-weight: 700; letter-spacing: 0.5px;
+  }
+  .lang-vi .tab-btn { text-transform: none; letter-spacing: 0.3px; }
+  .lang-vi .pay-mode-tab { text-transform: none; letter-spacing: 0.3px; }
+  .lang-vi .overtime-badge, .lang-vi .absent-badge, .lang-vi .holiday-badge { text-transform: none; letter-spacing: 0.3px; }
 
-  /* Hide sidebar net on mobile — only shown inside desktop media query */
   #sidebarNet { display: none; }
 
-  /* ════════════════════════════════════════
-     DESKTOP LAYOUT  (≥ 900px)
-  ════════════════════════════════════════ */
   @media (min-width: 900px) {
     body { padding-bottom: 0; display: flex; flex-direction: column; height: 100vh; overflow: hidden; }
-
     header { padding: 14px 32px; flex-shrink: 0; }
     header h1 { font-size: 22px; }
-
-    /* Two-column wrapper */
-    #desktopLayout {
-      display: flex;
-      flex: 1;
-      overflow: hidden;
-      gap: 0;
-    }
-
-    /* ── LEFT SIDEBAR ── */
-    #leftPanel {
-      width: 340px;
-      min-width: 300px;
-      max-width: 380px;
-      flex-shrink: 0;
-      display: flex;
-      flex-direction: column;
-      border-right: 1px solid var(--border);
-      overflow-y: auto;
-      overflow-x: hidden;
-      padding-bottom: 20px;
-      background: var(--surface);
-    }
+    #desktopLayout { display: flex; flex: 1; overflow: hidden; gap: 0; }
+    #leftPanel { width: 340px; min-width: 300px; max-width: 380px; flex-shrink: 0; display: flex; flex-direction: column; border-right: 1px solid var(--border); overflow-y: auto; overflow-x: hidden; padding-bottom: 20px; background: var(--surface); }
     #leftPanel::-webkit-scrollbar { width: 3px; }
     #leftPanel::-webkit-scrollbar-thumb { background: var(--border); border-radius: 2px; }
-
     #leftPanel .month-tabs { padding: 14px 16px 10px; flex-wrap: wrap; }
     #leftPanel .summary-grid { padding: 12px 16px; }
-    #leftPanel .sum-card.full .sum-value.big { font-size: 26px; }
     #leftPanel .deduction-section { margin: 0 16px 0; }
-
-    /* Net pay pinned to sidebar bottom */
-    #sidebarNet {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 14px 20px;
-      background: var(--surface);
-      border-top: 1px solid var(--border);
-      margin-top: auto;
-      position: sticky;
-      bottom: 0;
-      flex-shrink: 0;
-    }
-
-    /* Hide mobile net bar */
+    #sidebarNet { display: flex; align-items: center; justify-content: space-between; padding: 14px 20px; background: var(--surface); border-top: 1px solid var(--border); margin-top: auto; position: sticky; bottom: 0; flex-shrink: 0; }
     .net-bar { display: none !important; }
     #sidebarNet { display: flex !important; }
-
-    /* ── RIGHT PANEL ── */
-    #rightPanel {
-      flex: 1;
-      display: flex;
-      flex-direction: column;
-      overflow: hidden;
-      background: var(--bg);
-      position: relative;
-    }
-
-    #rightPanelScroll {
-      flex: 1;
-      overflow-y: auto;
-      padding: 0 0 24px;
-    }
+    #rightPanel { flex: 1; display: flex; flex-direction: column; overflow: hidden; background: var(--bg); position: relative; }
+    #rightPanelScroll { flex: 1; overflow-y: auto; padding: 0 0 24px; }
     #rightPanelScroll::-webkit-scrollbar { width: 4px; }
     #rightPanelScroll::-webkit-scrollbar-thumb { background: var(--border); border-radius: 2px; }
-
     #rightPanel .section-header { padding: 16px 24px 10px; border-bottom: 1px solid var(--border); background: var(--bg); position: sticky; top: 0; z-index: 10; }
     #rightPanel .bulk-bar { padding: 10px 24px; }
     #rightPanel .entries-list { padding: 16px 24px; }
-
-    /* Form as slide-in drawer from right */
-    #formPanel {
-      position: fixed;
-      top: 0; right: 0; bottom: 0;
-      width: 420px;
-      max-width: 95vw;
-      margin: 0 !important;
-      border-radius: 0 !important;
-      border-left: 1px solid var(--accent) !important;
-      border-top: none !important;
-      border-bottom: none !important;
-      border-right: none !important;
-      z-index: 250;
-      overflow-y: auto;
-      padding: 24px 20px 32px !important;
-      transform: translateX(100%);
-      transition: transform .3s ease;
-      display: block !important;
-      background: var(--surface) !important;
-      box-shadow: -8px 0 40px rgba(0,0,0,.4);
-    }
-    #formPanel.open {
-      transform: translateX(0);
-    }
-    #formPanel .btn-save { margin-top: 8px; }
-
-    /* Form backdrop */
-    #formBackdrop {
-      display: none;
-      position: fixed; inset: 0;
-      background: rgba(0,0,0,.45);
-      z-index: 249;
-    }
+    #formPanel { position: fixed; top: 0; right: 0; bottom: 0; width: 420px; max-width: 95vw; margin: 0 !important; border-radius: 0 !important; border-left: 1px solid var(--accent) !important; border-top: none !important; border-bottom: none !important; border-right: none !important; z-index: 250; overflow-y: auto; padding: 24px 20px 32px !important; transform: translateX(100%); transition: transform .3s ease; display: block !important; background: var(--surface) !important; box-shadow: -8px 0 40px rgba(0,0,0,.4); }
+    #formPanel.open { transform: translateX(0); }
+    #formBackdrop { display: none; position: fixed; inset: 0; background: rgba(0,0,0,.45); z-index: 249; }
     #formBackdrop.open { display: block; }
-
-    /* Entry cards wider */
     .entry-card { border-radius: 12px; }
-
-    /* Month dropdown wider */
     #monthDropdownWrap { padding: 8px 16px 0; }
-
-    /* Settings drawer → centered modal on desktop */
-    .settings-drawer {
-      position: fixed;
-      top: 50%; left: 50%;
-      transform: translate(-50%, -60%);
-      transition: transform .3s ease, opacity .3s ease;
-      border-radius: 20px !important;
-      max-width: 560px;
-      width: calc(100% - 48px);
-      max-height: 85vh;
-      bottom: auto;
-    }
-    .settings-overlay.open .settings-drawer {
-      transform: translate(-50%, -50%);
-    }
-
-    /* Onboarding card */
+    .settings-drawer { position: fixed; top: 50%; left: 50%; transform: translate(-50%, -60%); transition: transform .3s ease, opacity .3s ease; border-radius: 20px !important; max-width: 560px; width: calc(100% - 48px); max-height: 85vh; bottom: auto; }
+    .settings-overlay.open .settings-drawer { transform: translate(-50%, -50%); }
     .onboarding-card { margin: 16px 24px; }
   }
-
-    /* Extra desktop polish */
   @media (min-width: 900px) {
-    /* Form panel close btn always visible on desktop */
     #formPanel .form-title { display: block !important; }
-    /* Add entry form header row */
-    #formPanel > div:first-child button { display: block; }
   }
-
   @media (min-width: 1200px) {
     #leftPanel { width: 380px; }
     #formPanel { width: 460px; }
   }
 
-
-  /* ── NAME LOGIN ── */
-  #nameScreen {
-    position: fixed; inset: 0;
-    background: var(--bg);
-    z-index: 9999;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 32px 24px;
-  }
+  #nameScreen { position: fixed; inset: 0; background: var(--bg); z-index: 9999; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 32px 24px; }
   #nameScreen.hidden { display: none; }
   .ns-logo { font-family: 'Bebas Neue', sans-serif; font-size: 42px; letter-spacing: 4px; color: var(--accent); margin-bottom: 4px; text-align: center; }
   .ns-tagline { font-family: 'DM Mono', monospace; font-size: 11px; color: var(--muted); letter-spacing: 2px; text-transform: uppercase; margin-bottom: 52px; text-align: center; }
@@ -450,7 +264,6 @@
   .ns-btn:disabled { opacity: .4; cursor: default; }
   .ns-error { font-family: 'DM Mono', monospace; font-size: 11px; color: var(--red); letter-spacing: 1px; margin-top: 10px; min-height: 16px; text-align: center; }
   .ns-footer { font-family: 'DM Mono', monospace; font-size: 10px; color: var(--muted); margin-top: 24px; text-align: center; letter-spacing: 1px; }
-
 </style>
 </head>
 <body>
@@ -469,27 +282,23 @@
   <div class="ns-footer" id="nsFooter"></div>
 </div>
 
-
 <header>
   <h1 id="headerTitle">Pay Tracker</h1>
   <div style="display:flex;align-items:center;gap:12px;">
     <span id="headerMonth"></span>
     <button id="langToggleBtn" onclick="toggleLang()" style="background:transparent;border:1px solid var(--border);border-radius:20px;padding:4px 10px;font-family:'DM Mono',monospace;font-size:11px;color:var(--muted);cursor:pointer;letter-spacing:1px;transition:all .2s;" title="Switch language">EN</button>
-  <button class="gear-btn" onclick="openSettings()" title="Settings">⚙️</button>
+    <button class="gear-btn" onclick="openSettings()" title="Settings">⚙️</button>
   </div>
 </header>
 
-<!-- Settings Overlay -->
 <div class="settings-overlay" id="settingsOverlay" onclick="closeSettingsOutside(event)">
   <div class="settings-drawer">
     <div class="settings-handle"></div>
     <div class="settings-title">Settings</div>
-
     <div class="settings-section">
       <div class="settings-section-label">Identity</div>
       <div class="settings-row"><label>Your name</label><input type="text" id="stWorkerName" class="wide" placeholder="e.g. Bảo" oninput="saveSettings()"></div>
     </div>
-
     <div class="settings-section">
       <div class="settings-section-label">Pay Mode</div>
       <div class="pay-mode-tabs" id="payModeTabs">
@@ -497,21 +306,15 @@
         <button class="pay-mode-tab" data-mode="hourly" onclick="setPayMode('hourly')">Hourly</button>
         <button class="pay-mode-tab" data-mode="monthly" onclick="setPayMode('monthly')">Monthly</button>
       </div>
-
-      <!-- Time-band -->
       <div id="pmTimeband">
         <div style="margin-top:14px;">
           <div id="bandRows"></div>
           <button class="ded-add-btn" style="margin-top:8px;width:100%;text-align:center;" onclick="addBand()">+ Add band</button>
         </div>
       </div>
-
-      <!-- Hourly -->
       <div id="pmHourly" style="display:none;">
         <div class="settings-row" style="margin-top:12px;"><label>Rate per hour</label><input type="number" id="stHourlyRate" placeholder="0" oninput="saveSettings()"></div>
       </div>
-
-      <!-- Monthly -->
       <div id="pmMonthly" style="display:none; margin-top:12px;">
         <div class="settings-row"><label>Base monthly salary</label><input type="number" id="stMonthlyBase" placeholder="0" oninput="saveSettings()"></div>
         <div class="settings-row"><label>Work days per month <span style="font-size:10px;color:var(--muted)">(for absent calc)</span></label><input type="number" id="stWorkDays" placeholder="26" min="1" max="31" oninput="saveSettings()" style="width:80px;"></div>
@@ -520,7 +323,6 @@
         <button class="ded-add-btn" style="margin-top:8px;" onclick="addBonus()">+ Add</button>
       </div>
     </div>
-
     <div class="settings-section">
       <div class="settings-section-label">Currency</div>
       <div class="settings-row">
@@ -558,7 +360,6 @@
         <input type="text" id="stCurrency" placeholder="e.g. ₫" maxlength="5" oninput="saveSettings()" style="width:80px;background:var(--card);border:1px solid var(--border);border-radius:8px;color:var(--text);font-family:'DM Mono',monospace;font-size:13px;padding:8px 10px;outline:none;">
       </div>
     </div>
-
     <div class="settings-section">
       <div class="settings-section-label">Holiday Pay</div>
       <div class="settings-row">
@@ -566,7 +367,6 @@
         <input type="number" id="stHolidayMult" step="0.25" min="1" placeholder="2" oninput="saveSettings()" style="width:80px;">
       </div>
     </div>
-
     <div class="settings-section">
       <div class="settings-section-label">Display Preferences</div>
       <div class="settings-row">
@@ -578,7 +378,6 @@
         <div id="weekViewToggle" class="toggle-sw" onclick="toggleWeekView()"><div class="knob"></div></div>
       </div>
     </div>
-
     <div class="settings-section" style="border-top:1px solid var(--border);padding-top:16px;margin-top:4px;">
       <button class="settings-save-btn" onclick="closeSettings()">✓ Save Settings</button>
       <button onclick="resetAllData()" style="margin-top:10px;background:transparent;border:1px solid var(--red);color:var(--red);border-radius:10px;padding:11px;width:100%;font-family:'DM Mono',monospace;font-size:12px;letter-spacing:1px;cursor:pointer;">🗑 Reset All Data</button>
@@ -589,12 +388,9 @@
 <div id="desktopLayout">
 <div id="leftPanel">
 <div class="month-tabs" id="monthTabs"></div>
-
-<!-- Month dropdown for older months -->
 <div id="monthDropdownWrap" style="display:none;padding:10px 16px 0;">
   <select id="monthDropdown" onchange="switchToDropdownMonth()" style="background:var(--card);border:1px solid var(--border);border-radius:20px;color:var(--text);font-family:'DM Mono',monospace;font-size:12px;padding:6px 14px;outline:none;width:100%;letter-spacing:1px;cursor:pointer;"></select>
 </div>
-
 <div class="summary-grid">
   <div class="sum-card full">
     <div class="sum-label">Gross Earnings</div>
@@ -611,12 +407,10 @@
     <div class="sum-value" id="avgDay" style="color:var(--sat)">0 ₫</div>
   </div>
 </div>
-
-<!-- Deductions -->
 <div class="deduction-section">
   <div class="ded-header">
     <span class="ded-title">Deductions</span>
-    <button class="ded-add-btn" id="dedAddBtn" onclick="addDed()">+ Thêm</button>
+    <button class="ded-add-btn" id="dedAddBtn" onclick="addDed()">+ Add</button>
   </div>
   <div id="dedRows"></div>
   <div class="ded-footer">
@@ -624,13 +418,10 @@
     <span class="ded-footer-val" id="totalDed">0 ₫</span>
   </div>
 </div>
-
-<!-- sidebar net -->
 <div id="sidebarNet"><span class="net-label">Net Pay</span><span class="net-value" id="sidebarNetVal">0 ₫</span></div>
-</div><!-- /leftPanel -->
+</div>
 
 <div id="rightPanel"><div id="rightPanelScroll">
-<!-- Work Log -->
 <div class="section-header">
   <span class="section-title">Work Log</span>
   <div style="display:flex;gap:8px;align-items:center">
@@ -649,12 +440,11 @@
 
 <div id="formBackdrop" onclick="closeFormBackdrop()"></div>
 <div class="form-panel" id="formPanel">
-  <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:4px;">
-  <div class="form-title" id="formTitle" style="display:block;margin-bottom:0;">Editing entry</div>
-  <button onclick="closeFormBackdrop()" style="background:transparent;border:none;color:var(--muted);font-size:22px;cursor:pointer;line-height:1;padding:0;" title="Close">×</button>
-</div>
+  <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:12px;">
+    <div class="form-title" id="formTitle" style="display:block;margin-bottom:0;">Add Entry</div>
+    <button onclick="closeFormBackdrop()" style="background:transparent;border:none;color:var(--muted);font-size:22px;cursor:pointer;line-height:1;padding:0;transition:color .2s;" onmouseover="this.style.color='var(--text)'" onmouseout="this.style.color='var(--muted)'" title="Close">×</button>
+  </div>
 
-  <!-- Date + Note row -->
   <div class="form-row">
     <div class="form-group">
       <label for="fDate" id="lbl-date">Date</label>
@@ -666,7 +456,6 @@
     </div>
   </div>
 
-  <!-- Holiday toggle -->
   <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:10px;background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:10px 14px;">
     <span style="font-size:13px;color:var(--text);" id="lbl-holidayPay">Holiday pay (×<span id="holidayMultLabel">2</span>)</span>
     <div id="holidayToggle" onclick="toggleHoliday()" style="width:44px;height:24px;border-radius:12px;background:var(--border);cursor:pointer;position:relative;transition:background .2s;flex-shrink:0;">
@@ -674,7 +463,6 @@
     </div>
   </div>
 
-  <!-- Monthly-mode flags (shown only in monthly pay mode) -->
   <div id="monthlyFlags" style="display:none;gap:8px;margin-bottom:10px;">
     <div style="display:flex;align-items:center;justify-content:space-between;background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:10px 14px;">
       <span style="font-size:13px;color:var(--text);" id="lbl-absent">Absent / Leave day <span style="font-size:11px;color:var(--muted);" id="lbl-absentSub">(deducts daily rate)</span></span>
@@ -690,11 +478,9 @@
     </div>
   </div>
 
-  <!-- Dynamic shift list (hidden in monthly mode when absent) -->
   <div id="shiftList"></div>
-  <button class="ded-add-btn" id="addShiftBtn" onclick="addShiftRow()" style="width:100%;text-align:center;margin-bottom:12px;" id="lbl-addShift">+ Add shift</button>
+  <button class="ded-add-btn" id="addShiftBtn" onclick="addShiftRow()" style="width:100%;text-align:center;margin-bottom:12px;">+ Add shift</button>
 
-  <!-- Hours + Month -->
   <div class="form-row">
     <div class="form-group">
       <label id="lbl-totalHours">Total Hours</label>
@@ -710,9 +496,8 @@
 </div>
 
 <div class="entries-list" id="entriesList"></div>
-</div><!-- /rightPanelScroll -->
-</div><!-- /rightPanel -->
-</div><!-- /desktopLayout -->
+</div></div>
+</div>
 
 <div class="net-bar">
   <div class="net-bar-left">
@@ -768,6 +553,7 @@ const TRANSLATIONS = {
     deleteBtn: 'Delete',
     selected: 'selected',
     editingEntry: 'Editing entry',
+    addingEntry: 'Add Entry',
     labelDate: 'Date',
     labelNote: 'Note / Tag',
     labelNoteHolder: 'e.g. Holiday',
@@ -795,6 +581,7 @@ const TRANSLATIONS = {
     hrsWorked: (h) => `${h}h worked`,
     absenceBadge: 'ABSENT',
     otBadge: 'OT',
+    holidayBadge: 'HOLIDAY',
     absentDaysSub: (n) => `−${n} absent day${n>1?'s':''}`,
     otDaysSub: (n) => `${n} OT day${n>1?'s':''}`,
     addMonth: '+ Month',
@@ -817,6 +604,7 @@ const TRANSLATIONS = {
     baseSalaryLabel: 'Base salary',
     grossPayLabel: 'Gross pay',
     quickBtn: '⚡ Quick',
+    holidayMultiplierLabel: (x) => `× ${x} holiday multiplier applied`,
   },
   vi: {
     appTitle: 'Pay Tracker',
@@ -861,6 +649,7 @@ const TRANSLATIONS = {
     deleteBtn: 'Xoá',
     selected: 'đã chọn',
     editingEntry: 'Đang chỉnh sửa mục',
+    addingEntry: 'Thêm ngày làm',
     labelDate: 'Ngày',
     labelNote: 'Ghi chú',
     labelNoteHolder: 'vd: Ngày lễ, tăng ca...',
@@ -888,6 +677,7 @@ const TRANSLATIONS = {
     hrsWorked: (h) => `${h}h`,
     absenceBadge: 'NGHỈ',
     otBadge: 'OT',
+    holidayBadge: 'LỄ',
     absentDaysSub: (n) => `−${n} ngày nghỉ`,
     otDaysSub: (n) => `${n} ngày OT`,
     addMonth: '+ Tháng',
@@ -910,6 +700,7 @@ const TRANSLATIONS = {
     baseSalaryLabel: 'Lương cơ bản',
     grossPayLabel: 'Tổng thu nhập',
     quickBtn: '⚡ Nhanh',
+    holidayMultiplierLabel: (x) => `× ${x} hệ số ngày lễ`,
   }
 };
 
@@ -930,59 +721,41 @@ function applyLang() {
   if (btn) btn.textContent = currentLang === 'en' ? 'VI' : 'EN';
   document.documentElement.lang = currentLang;
   document.documentElement.classList.toggle('lang-vi', currentLang === 'vi');
-  // Static settings drawer labels
   document.querySelector('.settings-title').textContent = t('settings');
-  // section labels
   const secLabels = document.querySelectorAll('.settings-section-label');
   const secKeys = ['settingIdentity','settingPayMode','settingCurrency','settingHolidayPay','settingDisplay'];
   secLabels.forEach((el, i) => { if (secKeys[i]) el.textContent = t(secKeys[i]); });
-  // Identity row
   const identLabel = document.querySelector('#stWorkerName')?.closest('.settings-row')?.querySelector('label');
   if (identLabel) identLabel.textContent = t('settingYourName');
-  // Pay mode tabs
   const pmTabs = document.querySelectorAll('.pay-mode-tab');
   const pmKeys = ['settingTimeBand','settingHourly','settingMonthly'];
   pmTabs.forEach((tab, i) => { if (pmKeys[i]) tab.textContent = t(pmKeys[i]); });
-  // Hourly rate label
   const hourlyLabel = document.querySelector('#stHourlyRate')?.closest('.settings-row')?.querySelector('label');
   if (hourlyLabel) hourlyLabel.textContent = t('settingRatePerHour');
-  // Monthly labels
   const monthlyBase = document.querySelector('#stMonthlyBase')?.closest('.settings-row')?.querySelector('label');
   if (monthlyBase) monthlyBase.textContent = t('settingBaseSalary');
   const workDaysLabel = document.querySelector('#stWorkDays')?.closest('.settings-row')?.querySelector('label');
   if (workDaysLabel) workDaysLabel.innerHTML = t('settingWorkDays') + ` <span style="font-size:10px;color:var(--muted)">${t('settingWorkDaysSub')}</span>`;
-  // Currency label
   const curLabel = document.querySelector('#stCurrencySelect')?.closest('.settings-row')?.querySelector('label');
   if (curLabel) curLabel.textContent = t('settingCurrency');
-  // Holiday mult label
   const holLabel = document.querySelector('#stHolidayMult')?.closest('.settings-row')?.querySelector('label');
   if (holLabel) holLabel.innerHTML = t('settingHolidayMult') + ` <span style="font-size:10px;color:var(--muted)">${t('settingHolidayMultSub')}</span>`;
-  // Display prefs
   const otLabel = document.querySelector('#stOvertimeHours')?.closest('.settings-row')?.querySelector('label');
   if (otLabel) otLabel.textContent = t('settingOTFlag');
   const wvLabel = document.querySelector('#weekViewToggle')?.closest('.settings-row')?.querySelector('label');
   if (wvLabel) wvLabel.textContent = t('settingWeekGroup');
-  // Buttons
   document.querySelector('.settings-save-btn').textContent = t('btnSaveSettings');
-  // Summary labels
   document.querySelector('.sum-card.full .sum-label').textContent = t('grossEarnings');
   const sumCards = document.querySelectorAll('.sum-card:not(.full) .sum-label');
   if (sumCards[0]) sumCards[0].textContent = t('totalHours');
   if (sumCards[1]) sumCards[1].textContent = t('avgDay');
-  // Deductions header
   document.querySelector('.ded-title').textContent = t('deductions');
-  // Update all ded-add-btn elements
-  document.querySelectorAll('.ded-add-btn').forEach(b => { if (!b.textContent.startsWith('+')) return; b.textContent = t('dedAdd'); });
   const dedAddBtn = document.getElementById('dedAddBtn');
   if (dedAddBtn) dedAddBtn.textContent = t('dedAdd');
   document.querySelector('.ded-footer-label').textContent = t('totalDeducted');
-  // Work log
   document.querySelector('.section-title').textContent = t('workLog');
   document.getElementById('quickAddBtn').textContent = t('quickBtn');
   document.getElementById('selectToggleBtn').textContent = selectMode ? t('cancelBtn') : t('selectBtn');
-  // Form labels
-  document.querySelector('label[for="fDate"]') && (document.querySelector('label[for="fDate"]').textContent = t('labelDate'));
-  // Form dynamic labels with IDs
   const lblDate = document.getElementById('lbl-date');
   if (lblDate) lblDate.textContent = t('labelDate');
   const lblNote = document.getElementById('lbl-note');
@@ -1011,23 +784,18 @@ function applyLang() {
   const saveBtn = document.getElementById('saveBtn');
   if (saveBtn && !editingId) saveBtn.textContent = t('saveEntry');
   const formTitle = document.getElementById('formTitle');
-  if (formTitle) formTitle.textContent = t('editingEntry');
-  // Net pay
+  if (formTitle) formTitle.textContent = editingId ? t('editingEntry') : t('addingEntry');
   document.querySelector('.net-label').textContent = t('netPay');
   const copyBtn = document.getElementById('copyBtn');
   if (copyBtn && !copyBtn.classList.contains('done')) copyBtn.textContent = t('copyBtn');
-  // Add band / add bonus buttons
   const addBandBtn = document.querySelector('#bandRows + button.ded-add-btn');
   if (addBandBtn) addBandBtn.textContent = t('addBand');
   const lblBonuses = document.getElementById('lbl-bonuses');
   if (lblBonuses) lblBonuses.textContent = t('settingBonuses');
-  // Bulk bar
   document.getElementById('bulkLabel').textContent = selectedIds.size + ' ' + t('selected');
   document.querySelector('.bulk-cancel-btn').textContent = t('cancelBtn');
   document.querySelector('.bulk-del-btn').textContent = t('deleteBtn');
 }
-
-const DAYS = TRANSLATIONS[currentLang].days;
 
 /* ── FORMAT HELPERS ── */
 function minsTo12h(mins) {
@@ -1039,16 +807,12 @@ function minsTo12h(mins) {
   return m === 0 ? h12 + period : h12 + ':' + String(m).padStart(2,'0') + period;
 }
 function shiftLabelTo12h(label) {
-  // Convert "06:00-14:00" or "6AM-2PM" style to "6AM – 2PM"
   if (!label) return label;
   const parts = label.split('-');
   if (parts.length < 2) return label;
-  // Try parsing each part
   const convert = (str) => {
     str = str.trim();
-    // Already 12h format (has AM/PM)
     if (/[AP]M$/i.test(str)) return str.toUpperCase();
-    // 24h HH:MM format
     const m24 = str.match(/^(\d{1,2}):(\d{2})$/);
     if (m24) {
       const h = parseInt(m24[1]), m = parseInt(m24[2]);
@@ -1056,7 +820,6 @@ function shiftLabelTo12h(label) {
     }
     return str;
   };
-  // Handle multi-shift label with | separators intact
   return parts.map((p, i) => i === 0 ? convert(p) : convert(p)).join(' – ');
 }
 
@@ -1067,7 +830,6 @@ let state = JSON.parse(localStorage.getItem('sbt_v5') || 'null') || {
   deductions: {}
 };
 
-// Always ensure current month exists and is set as active on load
 (function ensureCurrentMonth() {
   const now = new Date();
   const label = now.toLocaleString('en-US', { month: 'long' }) + ' ' + now.getFullYear();
@@ -1076,7 +838,6 @@ let state = JSON.parse(localStorage.getItem('sbt_v5') || 'null') || {
     state.entries[label] = [];
     state.deductions[label] = [];
   }
-  // Always land on current month when opening the app
   state.activeMonth = label;
   save();
 })();
@@ -1086,13 +847,12 @@ function fmt(n) { return (n || 0).toLocaleString('vi-VN') + ' ₫'; }
 function M() { return state.activeMonth; }
 
 /* ── MONTH TABS ── */
-const MAX_TABS = 3; // Show only 3 most recent months as tabs; older ones go to dropdown
+const MAX_TABS = 3;
 
 function buildTabs() {
   const c = document.getElementById('monthTabs');
   c.innerHTML = '';
   const months = state.months;
-  // Show up to MAX_TABS most recent months as tabs
   const tabMonths = months.slice(0, MAX_TABS);
   const dropMonths = months.slice(MAX_TABS);
 
@@ -1100,30 +860,25 @@ function buildTabs() {
     const b = document.createElement('button');
     b.className = 'tab-btn' + (m === M() ? ' active' : '');
     b.onclick = () => { state.activeMonth = m; save(); render(); };
-
     const label = document.createElement('span');
     label.className = 'tab-label';
     label.textContent = m;
     b.appendChild(label);
-
     const pen = document.createElement('button');
     pen.className = 'tab-edit';
     pen.textContent = '✏️';
     pen.title = 'Rename ' + m;
     pen.onclick = (e) => { e.stopPropagation(); renameMonth(m); };
     b.appendChild(pen);
-
     const x = document.createElement('button');
     x.className = 'tab-remove';
     x.textContent = '×';
     x.title = 'Remove ' + m;
     x.onclick = (e) => { e.stopPropagation(); removeMonth(m); };
     b.appendChild(x);
-
     c.appendChild(b);
   });
 
-  // If current active month is in dropdown, show it as a tab too
   if (dropMonths.includes(M())) {
     const b = document.createElement('button');
     b.className = 'tab-btn active';
@@ -1140,7 +895,6 @@ function buildTabs() {
   a.onclick = addMonth;
   c.appendChild(a);
 
-  // Show/hide dropdown for older months
   const wrap = document.getElementById('monthDropdownWrap');
   const dd = document.getElementById('monthDropdown');
   if (dropMonths.length > 0) {
@@ -1152,7 +906,6 @@ function buildTabs() {
       o.textContent = m + (m === M() ? ' ✓' : '');
       dd.appendChild(o);
     });
-    // Reset to placeholder if active month is in tabs
     if (!dropMonths.includes(M())) dd.selectedIndex = 0;
     else dd.value = M();
   } else {
@@ -1182,16 +935,12 @@ function renameMonth(oldName) {
 }
 
 function removeMonth(m) {
-  if (state.months.length <= 1) {
-    alert(t('alertNeedMonth'));
-    return;
-  }
+  if (state.months.length <= 1) { alert(t('alertNeedMonth')); return; }
   if (!confirm(t('confirmRemoveMonth', m))) return;
   const idx = state.months.indexOf(m);
   state.months.splice(idx, 1);
   delete state.entries[m];
   delete state.deductions[m];
-  // Switch to nearest remaining month
   state.activeMonth = state.months[Math.min(idx, state.months.length - 1)];
   save(); render();
 }
@@ -1213,27 +962,22 @@ function buildDeds() {
   const list = state.deductions[m];
   const c = document.getElementById('dedRows');
   c.innerHTML = '';
-
   if (!list.length) {
     c.innerHTML = `<div class="ded-empty">${t('noDeds')}</div>`;
     document.getElementById('totalDed').textContent = '0 ₫';
     updateNet();
     return;
   }
-
   list.forEach((d, i) => {
     const row = document.createElement('div');
     row.className = 'ded-row';
     row.innerHTML = `
-      <input class="ded-name" type="text" value="${escHtml(d.name)}" placeholder="Name (e.g. Electricity)"
-        oninput="dedSet(${i},'name',this.value)">
-      <input class="ded-amt" type="number" value="${d.amount || ''}" placeholder="Amount VND"
-        oninput="dedSet(${i},'amount',+this.value||0)">
+      <input class="ded-name" type="text" value="${escHtml(d.name)}" placeholder="Name (e.g. Electricity)" oninput="dedSet(${i},'name',this.value)">
+      <input class="ded-amt" type="number" value="${d.amount || ''}" placeholder="Amount" oninput="dedSet(${i},'amount',+this.value||0)">
       <button class="ded-del" onclick="dedDel(${i})">×</button>
     `;
     c.appendChild(row);
   });
-
   const total = list.reduce((s, d) => s + (d.amount || 0), 0);
   document.getElementById('totalDed').textContent = fmt(total);
   updateNet();
@@ -1245,10 +989,7 @@ function addDed() {
   state.deductions[m].push({ name: '', amount: 0 });
   save(); buildDeds();
 }
-function dedDel(i) {
-  state.deductions[M()].splice(i, 1);
-  save(); buildDeds();
-}
+function dedDel(i) { state.deductions[M()].splice(i, 1); save(); buildDeds(); }
 function dedSet(i, key, val) {
   state.deductions[M()][i][key] = val;
   save();
@@ -1268,49 +1009,37 @@ function updateSummary() {
   let gross = entries.reduce((s, e) => s + e.total, 0);
   const hrs = entries.reduce((s, e) => s + (e.hours || 0), 0);
   const working = entries.filter(e => !e.absent && e.total >= 0).length;
-
-  // In monthly mode: base + bonuses - absent deductions
+  const fmtLive = n => (n||0).toLocaleString('vi-VN') + cur;
   const bonusSub = document.getElementById('bonusSub');
   if (cfg.payMode === 'monthly') {
     const bonusTotal = (cfg.bonuses || []).reduce((s, b) => s + (b.amount || 0), 0);
     const baseGross = (cfg.monthlyBase || 0) + bonusTotal;
-    // Absent entries store negative totals
     const absentDeduction = entries.filter(e => e.absent).reduce((s, e) => s + Math.abs(e.total || 0), 0);
     gross = baseGross - absentDeduction;
     const absentDays = entries.filter(e => e.absent).length;
     const otDays = entries.filter(e => e.isOT).length;
     let subParts = [];
     if (bonusTotal > 0) {
-      const parts = (cfg.bonuses || []).filter(b => b.name || b.amount)
-        .map(b => (b.name || 'Bonus') + ': ' + (b.amount||0).toLocaleString('vi-VN') + cur).join(' · ');
+      const parts = (cfg.bonuses || []).filter(b => b.name || b.amount).map(b => (b.name || 'Bonus') + ': ' + (b.amount||0).toLocaleString('vi-VN') + cur).join(' · ');
       subParts.push('+ ' + parts);
     }
     if (absentDays > 0) subParts.push(t('absentDaysSub', absentDays));
     if (otDays > 0) subParts.push(t('otDaysSub', otDays));
-    if (subParts.length) {
-      bonusSub.textContent = subParts.join(' · ');
-      bonusSub.style.display = '';
-    } else {
-      bonusSub.style.display = 'none';
-    }
+    if (subParts.length) { bonusSub.textContent = subParts.join(' · '); bonusSub.style.display = ''; }
+    else bonusSub.style.display = 'none';
   } else {
     bonusSub.style.display = 'none';
   }
-
-  // fmt using live currency
-  const fmtLive = n => (n||0).toLocaleString('vi-VN') + cur;
   document.getElementById('grossTotal').textContent = fmtLive(gross);
   document.getElementById('daysWorked').textContent = t('daysWorkedHrs', working, hrs);
   document.getElementById('totalHours').textContent = hrs + 'h';
   document.getElementById('avgDay').textContent = working ? fmtLive(Math.round(gross / working)) : '0 ' + cur;
   document.getElementById('headerMonth').textContent = M().toUpperCase();
-  // Dynamic title
   const name = cfg.workerName ? cfg.workerName.trim() : '';
-  document.getElementById('headerTitle').textContent = name
-    ? t('appTitlePossessive').replace('{name}', name)
-    : t('appTitle');
+  document.getElementById('headerTitle').textContent = name ? t('appTitlePossessive').replace('{name}', name) : t('appTitle');
   updateNet();
 }
+
 function updateNet() {
   const cfg = getSettings();
   const cur = cfg.currency || '₫';
@@ -1324,7 +1053,10 @@ function updateNet() {
     gross = baseGross - absentDeduction;
   }
   const deds = (state.deductions[M()] || []).reduce((s, d) => s + (d.amount || 0), 0);
-  document.getElementById('netPay').textContent = fmtLive(gross - deds);
+  const net = gross - deds;
+  document.getElementById('netPay').textContent = fmtLive(net);
+  const sidebarNet = document.getElementById('sidebarNetVal');
+  if (sidebarNet) sidebarNet.textContent = fmtLive(net);
 }
 
 /* ── ENTRIES LIST ── */
@@ -1333,37 +1065,22 @@ function buildEntries() {
   c.innerHTML = '';
   const list = (state.entries[M()] || []).slice().sort((a, b) => parseInt(a.date.split('-')[2]) - parseInt(b.date.split('-')[2]));
   if (!list.length) {
-    const cfg = getSettings();
     const hasEverLogged = Object.values(state.entries).some(arr => arr.length > 0);
     if (!hasEverLogged) {
-      c.innerHTML = `
-        <div class="onboarding-card">
-          <div class="onboarding-icon">👋</div>
-          <div class="onboarding-title">${t('onboardTitle')}</div>
-          <div class="onboarding-steps">
-            <div class="onboarding-step"><span class="step-num">1</span><span>${t('onboard1')}</span></div>
-            <div class="onboarding-step"><span class="step-num">2</span><span>${t('onboard2')}</span></div>
-            <div class="onboarding-step"><span class="step-num">3</span><span>${t('onboard3')}</span></div>
-          </div>
-        </div>`;
+      c.innerHTML = `<div class="onboarding-card"><div class="onboarding-icon">👋</div><div class="onboarding-title">${t('onboardTitle')}</div><div class="onboarding-steps"><div class="onboarding-step"><span class="step-num">1</span><span>${t('onboard1')}</span></div><div class="onboarding-step"><span class="step-num">2</span><span>${t('onboard2')}</span></div><div class="onboarding-step"><span class="step-num">3</span><span>${t('onboard3')}</span></div></div></div>`;
     } else {
       c.innerHTML = `<div class="empty-state"><div class="empty-icon">📋</div>${t('emptyState')}</div>`;
     }
     return;
   }
   if (selectMode) c.classList.add('select-mode'); else c.classList.remove('select-mode');
-  // Derive active month/year for correct day-of-week display
   const _monthNames = ['January','February','March','April','May','June','July','August','September','October','November','December'];
   const _mLabel = M();
   const _mIdx = _monthNames.findIndex(mn => _mLabel.startsWith(mn));
   const _mYear = parseInt((_mLabel.match(/\d{4}/) || [])[0]);
-  const DAYS = TRANSLATIONS[currentLang].days;
-
   const cfg2 = getSettings();
-  const useWeekView = cfg2.weekView;
 
-  // Group by ISO week if week view enabled
-  if (useWeekView) {
+  if (cfg2.weekView) {
     const weeks = {};
     const weekOrder = [];
     list.forEach(e => {
@@ -1376,73 +1093,76 @@ function buildEntries() {
       weeks[key].push(e);
     });
     weekOrder.forEach(wk => {
-      const entries = weeks[wk];
-      const wkHrs = entries.reduce((s, e) => s + (e.hours || 0), 0);
-      const wkTotal = entries.reduce((s, e) => s + (e.total || 0), 0);
+      const wEntries = weeks[wk];
+      const wkHrs = wEntries.reduce((s, e) => s + (e.hours || 0), 0);
+      const wkTotal = wEntries.reduce((s, e) => s + (e.total || 0), 0);
       const fmtLive = n => (n||0).toLocaleString('vi-VN') + (cfg2.currency || '₫');
       const header = document.createElement('div');
       header.className = 'week-header';
       header.innerHTML = `<span class="week-label">${wk}</span><span class="week-summary">${wkHrs}h · ${fmtLive(wkTotal)}</span>`;
       c.appendChild(header);
-      entries.forEach(e => renderEntryCard(e, c, _mIdx, _mYear, cfg2));
+      wEntries.forEach(e => renderEntryCard(e, c, _mIdx, _mYear, cfg2));
     });
     return;
   }
-
   list.forEach(e => renderEntryCard(e, c, _mIdx, _mYear, cfg2));
 }
 
 function renderEntryCard(e, c, _mIdx, _mYear, cfg) {
-    const DAYS = TRANSLATIONS[currentLang].days;
-    const day = parseInt(e.date.split('-')[2]);
-    // Build date using active tab's year+month so day-of-week is correct
-    const d = (_mIdx !== -1 && !isNaN(_mYear))
-      ? new Date(_mYear, _mIdx, day)
-      : new Date(e.date + 'T12:00:00');
-    const isSat = d.getDay() === 6, isSun = d.getDay() === 0;
-    const pills = e.shifts.filter(s => s.t || s.a)
-      .map(s => `<span class="pill">${shiftLabelTo12h(s.t || '')} ${s.a ? s.a.toLocaleString() : ''}</span>`).join('');
-    const card = document.createElement('div');
-    const isSelected = selectedIds.has(e.id);
-    const overtimeThreshold = cfg.overtimeHours || 0;
-    const isOvertime = (overtimeThreshold > 0 && (e.hours || 0) > overtimeThreshold) || !!e.isOT;
-    const isAbsentEntry = !!e.absent;
-    const cur = cfg.currency || '₫';
-    let cardClass = 'entry-card' + (selectMode ? ' selectable' : '') + (isSelected ? ' selected' : '');
-    if (isAbsentEntry) cardClass += ' absent-day';
-    else if (isOvertime) cardClass += ' ot-day';
-    card.className = cardClass;
-    if (selectMode) card.onclick = () => toggleSelect(e.id);
-    card.innerHTML = `
-      <div class="entry-checkbox">${isSelected ? '✓' : ''}</div>
-      <div class="date-badge ${isSat?'sat':isSun?'sun':''}">
-        <div class="dn">${day}</div>
-        <div class="dd">${DAYS[d.getDay()]}</div>
+  const DAYS = TRANSLATIONS[currentLang].days;
+  const day = parseInt(e.date.split('-')[2]);
+  const d = (_mIdx !== -1 && !isNaN(_mYear)) ? new Date(_mYear, _mIdx, day) : new Date(e.date + 'T12:00:00');
+  const isSat = d.getDay() === 6, isSun = d.getDay() === 0;
+  const pills = e.shifts.filter(s => s.t || s.a)
+    .map(s => `<span class="pill">${shiftLabelTo12h(s.t || '')} ${s.a ? s.a.toLocaleString() : ''}</span>`).join('');
+  const card = document.createElement('div');
+  const isSelected = selectedIds.has(e.id);
+  const overtimeThreshold = cfg.overtimeHours || 0;
+  const isOvertime = (overtimeThreshold > 0 && (e.hours || 0) > overtimeThreshold) || !!e.isOT;
+  const isAbsentEntry = !!e.absent;
+  const isHolidayEntry = !!e.isHoliday;
+  const cur = cfg.currency || '₫';
+  let cardClass = 'entry-card' + (selectMode ? ' selectable' : '') + (isSelected ? ' selected' : '');
+  if (isAbsentEntry) cardClass += ' absent-day';
+  else if (isOvertime) cardClass += ' ot-day';
+  card.className = cardClass;
+  if (selectMode) card.onclick = () => toggleSelect(e.id);
+
+  // Build badge HTML
+  let badgeHtml = '';
+  if (isAbsentEntry) badgeHtml = `<span class="absent-badge">${t('absenceBadge')}</span>`;
+  else if (isHolidayEntry) {
+    const mult = cfg.holidayMult || 2;
+    badgeHtml = `<span class="holiday-badge">×${mult} ${t('holidayBadge')}</span>`;
+    if (isOvertime) badgeHtml += `<span class="overtime-badge">${t('otBadge')}</span>`;
+  } else if (isOvertime) badgeHtml = `<span class="overtime-badge">${t('otBadge')}</span>`;
+
+  card.innerHTML = `
+    <div class="entry-checkbox">${isSelected ? '✓' : ''}</div>
+    <div class="date-badge ${isSat?'sat':isSun?'sun':''}">
+      <div class="dn">${day}</div>
+      <div class="dd">${DAYS[d.getDay()]}</div>
+    </div>
+    <div class="entry-info">
+      ${e.note ? `<div class="entry-note">🏷 ${e.note}</div>` : ''}
+      <div class="shift-pills">${pills}</div>
+      <div class="entry-foot">
+        <span class="entry-hrs">${e.hours || 0}h worked${badgeHtml}</span>
+        <span class="entry-total" style="${isAbsentEntry ? 'color:var(--red)' : isHolidayEntry ? 'color:var(--accent)' : ''}">${isAbsentEntry ? '−' : ''}${Math.abs(e.total || 0).toLocaleString('vi-VN')}${cur}</span>
       </div>
-      <div class="entry-info">
-        ${e.note ? `<div class="entry-note">🏷 ${e.note}</div>` : ''}
-        <div class="shift-pills">${pills}</div>
-        <div class="entry-foot">
-          <span class="entry-hrs">${e.hours || 0}h worked${isAbsentEntry ? `<span class="absent-badge">${t('absenceBadge')}</span>` : isOvertime ? `<span class="overtime-badge">${t('otBadge')}</span>` : ''}</span>
-          <span class="entry-total" style="${isAbsentEntry ? 'color:var(--red)' : ''}">${isAbsentEntry ? '−' : ''}${Math.abs(e.total || 0).toLocaleString('vi-VN')}${cur}</span>
-        </div>
-      </div>
-      <div class="entry-actions" style="${selectMode?'display:none':''}">
-        <button class="edit-btn" onclick="editEntry('${e.id}')">✏️</button>
-        <button class="del-btn" onclick="delEntry('${e.id}')">×</button>
-      </div>
-    `;
-    c.appendChild(card);
+    </div>
+    <div class="entry-actions" style="${selectMode?'display:none':''}">
+      <button class="edit-btn" onclick="editEntry('${e.id}')">✏️</button>
+      <button class="del-btn" onclick="delEntry('${e.id}')">×</button>
+    </div>
+  `;
+  c.appendChild(card);
 }
 
 function quickAddYesterday() {
   const entries = (state.entries[M()] || []).slice().sort((a, b) => parseInt(a.date.split('-')[2]) - parseInt(b.date.split('-')[2]));
-  if (!entries.length) {
-    alert(t('alertNoQuickAdd'));
-    return;
-  }
+  if (!entries.length) { alert(t('alertNoQuickAdd')); return; }
   const last = entries[entries.length - 1];
-  // Figure out the next logical date: last day + 1, clamped to active month
   const _monthNames = ['January','February','March','April','May','June','July','August','September','October','November','December'];
   const _mLabel = M();
   const _mIdx = _monthNames.findIndex(mn => _mLabel.startsWith(mn));
@@ -1450,29 +1170,22 @@ function quickAddYesterday() {
   const lastDay = parseInt(last.date.split('-')[2]);
   const maxDay = new Date(_mYear, _mIdx + 1, 0).getDate();
   const nextDay = lastDay + 1;
-  if (nextDay > maxDay) {
-    alert('You\'re already at the last day of the month!');
-    return;
-  }
+  if (nextDay > maxDay) { alert('Already at the last day of the month!'); return; }
   const pad = n => String(n).padStart(2,'0');
   const newDate = _mYear + '-' + pad(_mIdx + 1) + '-' + pad(nextDay);
-  // Check if that date already has an entry
-  if ((state.entries[M()] || []).some(e => e.date === newDate)) {
-    alert('An entry already exists for the ' + nextDay + 'th. Edit it instead.');
-    return;
-  }
+  if ((state.entries[M()] || []).some(e => e.date === newDate)) { alert('An entry already exists for the ' + nextDay + 'th. Edit it instead.'); return; }
   const newEntry = {
     id: newDate + '_' + Date.now(),
     date: newDate,
     shifts: last.shifts.map(s => ({ ...s })),
     hours: last.hours,
     total: last.total,
-    note: last.note || ''
+    note: last.note || '',
+    isHoliday: last.isHoliday || false
   };
   if (!state.entries[M()]) state.entries[M()] = [];
   state.entries[M()].push(newEntry);
   save(); render();
-  // Flash confirmation
   const btn = document.getElementById('quickAddBtn');
   const orig = btn.textContent;
   btn.textContent = '✓ Added!';
@@ -1490,40 +1203,50 @@ function delEntry(id) {
 /* ── FORM ── */
 let editingId = null;
 
+// ── FIX 1: closeFormBackdrop properly defined ──
+function closeFormBackdrop() {
+  const p = document.getElementById('formPanel');
+  p.classList.remove('open', 'editing');
+  document.getElementById('formBackdrop').classList.remove('open');
+  if (editingId) {
+    editingId = null;
+    clearForm();
+  } else {
+    clearForm();
+  }
+}
+
 function toggleForm() {
   const p = document.getElementById('formPanel');
-  if (editingId) { editingId = null; p.classList.remove('open','editing'); clearForm(); return; }
   const isOpen = p.classList.contains('open');
-  p.classList.toggle('open');
-  p.classList.remove('editing');
-  if (!isOpen) {
-    setFormDateToMonth();
-    shiftRows = [{ s: '', e: '', a: '' }];
-    renderShiftList();
-    // Update holiday mult label
-    const cfg = getSettings();
-    const ml = document.getElementById('holidayMultLabel');
-    if (ml) ml.textContent = cfg.holidayMult || 2;
-    // Show/hide monthly flags
-    updateFormForPayMode(cfg.payMode);
+  if (isOpen) {
+    closeFormBackdrop();
+    return;
   }
+  p.classList.add('open');
+  p.classList.remove('editing');
+  document.getElementById('formBackdrop').classList.add('open');
+  setFormDateToMonth();
+  shiftRows = [{ s: '', e: '', a: '' }];
+  renderShiftList();
+  const cfg = getSettings();
+  const ml = document.getElementById('holidayMultLabel');
+  if (ml) ml.textContent = cfg.holidayMult || 2;
+  updateFormForPayMode(cfg.payMode);
+  const formTitle = document.getElementById('formTitle');
+  if (formTitle) formTitle.textContent = t('addingEntry');
+  const saveBtn = document.getElementById('saveBtn');
+  if (saveBtn) saveBtn.textContent = t('saveEntry');
 }
 
 function updateFormForPayMode(mode) {
   const mf = document.getElementById('monthlyFlags');
-  const sl = document.getElementById('shiftList');
-  const ab = document.getElementById('addShiftBtn');
-  if (mode === 'monthly') {
-    mf.style.display = 'block';
-    // In monthly mode, shift rows are optional (just for hours logging)
-    // Label the shift section differently
-  } else {
-    mf.style.display = 'none';
-  }
+  if (mode === 'monthly') mf.style.display = 'block';
+  else mf.style.display = 'none';
 }
 
 function setFormDateToMonth(existingDate) {
-  const m = M(); // e.g. "May 2026"
+  const m = M();
   const monthNames = ['January','February','March','April','May','June','July','August','September','October','November','December'];
   const monthIdx = monthNames.findIndex(mn => m.startsWith(mn));
   const yearMatch = m.match(/\d{4}/);
@@ -1541,7 +1264,6 @@ function setFormDateToMonth(existingDate) {
   dateEl.min = minStr;
   dateEl.max = maxStr;
   if (existingDate) {
-    // Keep the same day number, just move it into the active month/year
     const origDay = parseInt(existingDate.split('-')[2]);
     const clampedDay = Math.min(origDay, lastDay);
     dateEl.value = year + '-' + pad(monthIdx+1) + '-' + pad(clampedDay);
@@ -1556,22 +1278,19 @@ function editEntry(id) {
   editingId = id;
   const p = document.getElementById('formPanel');
   p.classList.add('open', 'editing');
+  document.getElementById('formBackdrop').classList.add('open');
   setFormDateToMonth(entry.date);
   document.getElementById('fNote').value = entry.note || '';
   document.getElementById('fHours').value = entry.hours || '';
-  // Load holiday multiplier label
   const cfg = getSettings();
   const ml = document.getElementById('holidayMultLabel');
   if (ml) ml.textContent = cfg.holidayMult || 2;
-  // Show/hide monthly flags
   updateFormForPayMode(cfg.payMode);
-  // Load holiday state
   isHoliday = !!entry.isHoliday;
   const htog = document.getElementById('holidayToggle');
   const hknob = document.getElementById('holidayKnob');
   htog.style.background = isHoliday ? 'var(--accent)' : 'var(--border)';
   hknob.style.left = isHoliday ? '22px' : '2px';
-  // Load absent state
   isAbsent = !!entry.absent;
   const atog = document.getElementById('absentToggle');
   const aknob = document.getElementById('absentKnob');
@@ -1584,22 +1303,18 @@ function editEntry(id) {
     sl.style.opacity = '0.35'; ab.style.opacity = '0.35'; fh.style.opacity = '0.35';
     sl.style.pointerEvents = 'none'; ab.style.pointerEvents = 'none';
   }
-  // Load OT state
   isOT = !!entry.isOT;
   syncOTToggle();
-  // Populate shiftRows from stored shifts
   shiftRows = (entry.shifts || []).filter(s => s.t || s.a).map(sh => {
     const parts = (sh.t || '').split('-');
     const sMin = parseTimeToMinutes(parts[0]);
     const eMin = parseTimeToMinutes(parts[1]);
-    return {
-      s: sMin !== null ? minutesToTimeInput(sMin) : '',
-      e: eMin !== null ? minutesToTimeInput(eMin) : '',
-      a: sh.a || ''
-    };
+    return { s: sMin !== null ? minutesToTimeInput(sMin) : '', e: eMin !== null ? minutesToTimeInput(eMin) : '', a: sh.a || '' };
   });
   if (!shiftRows.length) shiftRows = [{ s: '', e: '', a: '' }];
   renderShiftList();
+  const formTitle = document.getElementById('formTitle');
+  if (formTitle) formTitle.textContent = t('editingEntry');
   document.getElementById('saveBtn').textContent = t('updateEntry');
   p.scrollIntoView({ behavior: 'smooth', block: 'start' });
 }
@@ -1614,7 +1329,6 @@ function clearForm() {
   const abKnob = document.getElementById('absentKnob');
   if (abTog) { abTog.style.background = 'var(--border)'; abKnob.style.left = '2px'; }
   syncOTToggle();
-  // Restore shift visibility
   const sl = document.getElementById('shiftList');
   const ab = document.getElementById('addShiftBtn');
   const fh = document.getElementById('fHours');
@@ -1625,6 +1339,8 @@ function clearForm() {
   document.getElementById('fHours').value = '';
   const sb = document.getElementById('saveBtn');
   if (sb) sb.textContent = t('saveEntry');
+  const ft = document.getElementById('formTitle');
+  if (ft) ft.textContent = t('addingEntry');
   shiftRows = [{ s: '', e: '', a: '' }];
   renderShiftList();
 }
@@ -1646,38 +1362,25 @@ function saveEntry() {
   const month = document.getElementById('fMonth').value;
   const cfg = getSettings();
   const isMonthly = cfg.payMode === 'monthly';
-
-  const shifts = shiftRows
-    .filter(r => r.s || r.a)
-    .map(r => {
-      const label = (r.s && r.e) ? r.s + '-' + r.e : r.s || '';
-      return { t: label, a: parseFloat(r.a) || 0 };
-    });
-
-  // In monthly mode: shifts optional (just for hours log), absent entries have 0 total
+  const shifts = shiftRows.filter(r => r.s || r.a).map(r => {
+    const label = (r.s && r.e) ? r.s + '-' + r.e : r.s || '';
+    return { t: label, a: parseFloat(r.a) || 0 };
+  });
   if (!isMonthly && !shifts.length) { alert(t('alertAddShift')); return; }
-
   const hours = parseFloat(document.getElementById('fHours').value) || 0;
-
-  // Monthly absent: compute daily rate deduction
   let entryTotal = shifts.reduce((s, sh) => s + sh.a, 0);
   if (isMonthly && isAbsent) {
-    // Store as negative so summary can subtract it
     const bonusTotal = (cfg.bonuses || []).reduce((s, b) => s + (b.amount || 0), 0);
     const monthlyGross = (cfg.monthlyBase || 0) + bonusTotal;
     const workDays = cfg.workDaysPerMonth || 26;
     entryTotal = -(Math.round(monthlyGross / workDays));
   }
-
   const updated = {
     id: editingId || (date + '_' + Date.now()), date,
     shifts: shifts.length ? shifts : [],
-    hours,
-    total: entryTotal,
+    hours, total: entryTotal,
     note: document.getElementById('fNote').value.trim(),
-    isHoliday,
-    absent: isAbsent,
-    isOT
+    isHoliday, absent: isAbsent, isOT
   };
   if (!state.entries[month]) state.entries[month] = [];
   if (editingId) {
@@ -1692,8 +1395,7 @@ function saveEntry() {
         } else {
           state.entries[key][idx] = updated;
         }
-        found = true;
-        break;
+        found = true; break;
       }
     }
     if (!found) state.entries[month].push(updated);
@@ -1704,6 +1406,7 @@ function saveEntry() {
   clearForm();
   const p = document.getElementById('formPanel');
   p.classList.remove('open', 'editing');
+  document.getElementById('formBackdrop').classList.remove('open');
   state.activeMonth = month;
   render();
 }
@@ -1712,32 +1415,17 @@ function escHtml(s) {
   return (s||'').replace(/&/g,'&amp;').replace(/"/g,'&quot;').replace(/</g,'&lt;');
 }
 
-/* ── RENDER ── */
-
-/* ── COPY TO SEND ── */
+/* ── FIX 2: COPY TO SEND — includes holiday multiplier info ── */
 function copySummary() {
   const m = M();
   const monthNames = ['January','February','March','April','May','June','July','August','September','October','November','December'];
   const mIdx = monthNames.findIndex(mn => m.startsWith(mn));
   const mYear = parseInt((m.match(/\d{4}/) || [])[0]);
+  const DAYS = TRANSLATIONS[currentLang].days;
 
   const entries = (state.entries[m] || []).slice().sort((a,b) => parseInt(a.date.split('-')[2]) - parseInt(b.date.split('-')[2]));
   const hrs = entries.reduce((s, e) => s + (e.hours || 0), 0);
   const working = entries.filter(e => e.total > 0).length;
-
-  // Column widths
-  const COL1 = 10; // Date+day
-  const COL2 = 28; // Shifts
-  const COL3 = 7;  // Hours
-  const COL4 = 14; // Amount
-
-  const pad = (s, n) => String(s).padEnd(n);
-  const padL = (s, n) => String(s).padStart(n);
-  const divider = '┼'.padStart(0) + '─'.repeat(COL1+2) + '┼' + '─'.repeat(COL2+2) + '┼' + '─'.repeat(COL3+2) + '┼' + '─'.repeat(COL4+2) + '┤';
-  const topLine = '┌' + '─'.repeat(COL1+2) + '┬' + '─'.repeat(COL2+2) + '┬' + '─'.repeat(COL3+2) + '┬' + '─'.repeat(COL4+2) + '┐';
-  const botLine = '└' + '─'.repeat(COL1+2) + '┴' + '─'.repeat(COL2+2) + '┴' + '─'.repeat(COL3+2) + '┴' + '─'.repeat(COL4+2) + '┘';
-  const row = (a,b,c,d) => '│ ' + pad(a,COL1) + ' │ ' + pad(b,COL2) + ' │ ' + pad(c,COL3) + ' │ ' + padL(d,COL4) + ' │';
-  const midLine = '├' + '─'.repeat(COL1+2) + '┼' + '─'.repeat(COL2+2) + '┼' + '─'.repeat(COL3+2) + '┼' + '─'.repeat(COL4+2) + '┤';
 
   const cfg = getSettings();
   const cur = cfg.currency || '₫';
@@ -1747,6 +1435,8 @@ function copySummary() {
   if (cfg.payMode === 'monthly') {
     const bonusTotal = (cfg.bonuses || []).reduce((s, b) => s + (b.amount || 0), 0);
     gross = (cfg.monthlyBase || 0) + bonusTotal;
+    const absentDed = entries.filter(e => e.absent).reduce((s, e) => s + Math.abs(e.total || 0), 0);
+    gross -= absentDed;
   }
 
   const lines = [];
@@ -1759,22 +1449,43 @@ function copySummary() {
     const d = (mIdx !== -1 && !isNaN(mYear)) ? new Date(mYear, mIdx, day) : new Date(e.date + 'T12:00:00');
     const dayName = DAYS[d.getDay()];
     const shifts = e.shifts.filter(s => s.t || s.a);
-    const shiftStr = shifts.map(s => (s.t ? s.t : '') + (s.a ? '  ' + fmtAmt(s.a) : '')).join('  |  ');
+    const shiftStr = shifts.map(s => (s.t ? shiftLabelTo12h(s.t) : '') + (s.a ? '  ' + fmtAmt(s.a) : '')).join('  |  ');
     const notePart = e.note ? '  (' + e.note + ')' : '';
-    lines.push(dayName + ', ' + day + notePart);
-    lines.push(shiftStr);
-    lines.push((e.hours||0) + 'h  →  ' + fmtAmt(e.total));
+    let flags = [];
+    if (e.isHoliday) flags.push('×' + (cfg.holidayMult || 2) + ' holiday');
+    if (e.absent) flags.push('absent');
+    if (e.isOT) flags.push('OT');
+    const flagStr = flags.length ? '  [' + flags.join(', ') + ']' : '';
+    lines.push(dayName + ', ' + day + notePart + flagStr);
+    if (shiftStr) lines.push(shiftStr);
+    lines.push((e.hours||0) + 'h  →  ' + (e.absent ? '−' : '') + fmtAmt(Math.abs(e.total || 0)));
     lines.push('');
   });
 
-  lines.push('――――――――――――――――――――');
-  lines.push(t('daysWorkedLabel') + '  ' + working);
-  lines.push(t('totalHoursLabel') + '  ' + hrs + 'h');
-  if (cfg.payMode === 'monthly') {
-    lines.push(t('baseSalaryLabel') + '  ' + fmtAmt(cfg.monthlyBase || 0));
-    (cfg.bonuses || []).forEach(b => { if (b.name || b.amount) lines.push('  + ' + (b.name||'Bonus') + '  ' + fmtAmt(b.amount||0)); });
+  // Holiday entries summary
+  const holidayEntries = entries.filter(e => e.isHoliday);
+  if (holidayEntries.length > 0) {
+    const mult = cfg.holidayMult || 2;
+    lines.push('🎌 Holiday pay (×' + mult + ' multiplier) applied to ' + holidayEntries.length + ' day' + (holidayEntries.length > 1 ? 's' : ''));
   }
-  lines.push(t('grossPayLabel') + '    ' + fmtAmt(gross));
+
+  lines.push('――――――――――――――――――――');
+  lines.push(t('daysWorkedLabel') + ':  ' + working);
+  lines.push(t('totalHoursLabel') + ':  ' + hrs + 'h');
+  if (cfg.payMode === 'monthly') {
+    lines.push(t('baseSalaryLabel') + ':  ' + fmtAmt(cfg.monthlyBase || 0));
+    (cfg.bonuses || []).forEach(b => { if (b.name || b.amount) lines.push('  + ' + (b.name||'Bonus') + ':  ' + fmtAmt(b.amount||0)); });
+  }
+  lines.push(t('grossPayLabel') + ':  ' + fmtAmt(gross));
+
+  const deds = state.deductions[m] || [];
+  if (deds.length) {
+    lines.push('');
+    lines.push('Deductions:');
+    deds.forEach(d => { if (d.name || d.amount) lines.push('  − ' + (d.name || 'Deduction') + ':  ' + fmtAmt(d.amount || 0)); });
+    const totalDed = deds.reduce((s, d) => s + (d.amount || 0), 0);
+    lines.push('Net Pay:  ' + fmtAmt(gross - totalDed));
+  }
 
   const text = lines.join('\n');
   navigator.clipboard.writeText(text).then(() => {
@@ -1783,7 +1494,6 @@ function copySummary() {
     btn.classList.add('done');
     setTimeout(() => { btn.textContent = t('copyBtn'); btn.classList.remove('done'); }, 2500);
   }).catch(() => {
-    // fallback
     const ta = document.createElement('textarea');
     ta.value = text;
     ta.style.cssText = 'position:fixed;opacity:0';
@@ -1799,19 +1509,9 @@ function copySummary() {
 
 /* ── SETTINGS ── */
 const DEFAULT_SETTINGS = {
-  workerName: '',
-  payMode: 'timeband',
-  bands: [],
-  holidayMult: 2,
-  hourlyRate: 0,
-
-  monthlyBase: 0,
-  bonuses: [],
-  currency: '₫',
-  currencyCode: 'VND',
-  overtimeHours: 0,
-  weekView: false,
-  workDaysPerMonth: 26
+  workerName: '', payMode: 'timeband', bands: [], holidayMult: 2,
+  hourlyRate: 0, monthlyBase: 0, bonuses: [], currency: '₫', currencyCode: 'VND',
+  overtimeHours: 0, weekView: false, workDaysPerMonth: 26
 };
 
 function getSettings() {
@@ -1823,24 +1523,19 @@ function saveSettings() {
   s.workerName  = document.getElementById('stWorkerName').value;
   s.holidayMult = parseFloat(document.getElementById('stHolidayMult').value) || 2;
   s.hourlyRate  = parseFloat(document.getElementById('stHourlyRate').value) || 0;
-
   s.monthlyBase = parseFloat(document.getElementById('stMonthlyBase').value) || 0;
   s.workDaysPerMonth = parseInt(document.getElementById('stWorkDays').value) || 26;
   s.overtimeHours = parseFloat(document.getElementById('stOvertimeHours').value) || 0;
-  // currency
   const sel = document.getElementById('stCurrencySelect');
   if (sel.value === 'CUSTOM|?') {
     s.currencyCode = 'CUSTOM';
     s.currency = document.getElementById('stCurrency').value || '?';
   } else {
     const parts = sel.value.split('|');
-    s.currencyCode = parts[0];
-    s.currency = parts[1];
+    s.currencyCode = parts[0]; s.currency = parts[1];
   }
-  // active pay mode
   const activeTab = document.querySelector('.pay-mode-tab.active');
   if (activeTab) s.payMode = activeTab.dataset.mode;
-  // bands
   s.bands = [];
   document.querySelectorAll('.band-row').forEach(row => {
     const from = row.querySelector('.band-from').value.trim();
@@ -1848,7 +1543,6 @@ function saveSettings() {
     const rate = parseFloat(row.querySelector('.band-rate').value) || 0;
     if (from || rate) s.bands.push({ from, to, rate });
   });
-  // bonuses
   s.bonuses = [];
   document.querySelectorAll('.bonus-row').forEach(row => {
     const n = row.querySelector('.bonus-name').value.trim();
@@ -1856,8 +1550,7 @@ function saveSettings() {
     if (n || a) s.bonuses.push({ name: n, amount: a });
   });
   localStorage.setItem('sbt_settings_v5', JSON.stringify(s));
-  updateSummary();
-  updateNet();
+  updateSummary(); updateNet();
 }
 
 let _bandList = [];
@@ -1865,17 +1558,14 @@ let _bonusList = [];
 
 function openSettings() {
   const s = getSettings();
-  document.getElementById('stWorkerName').value  = s.workerName;
-  document.getElementById('stHourlyRate').value  = s.hourlyRate || '';
-
+  document.getElementById('stWorkerName').value = s.workerName;
+  document.getElementById('stHourlyRate').value = s.hourlyRate || '';
   document.getElementById('stHolidayMult').value = s.holidayMult;
   document.getElementById('stMonthlyBase').value = s.monthlyBase || '';
   document.getElementById('stWorkDays').value = s.workDaysPerMonth || 26;
   document.getElementById('stOvertimeHours').value = s.overtimeHours || '';
-  // Sync week view toggle
   const wvTog = document.getElementById('weekViewToggle');
   if (s.weekView) wvTog.classList.add('on'); else wvTog.classList.remove('on');
-  // Currency dropdown
   const sel = document.getElementById('stCurrencySelect');
   const code = s.currencyCode || 'VND';
   let found = false;
@@ -1889,8 +1579,7 @@ function openSettings() {
   _bandList  = (s.bands  || []).map(b => ({ ...b }));
   _bonusList = (s.bonuses || []).map(b => ({ ...b }));
   setPayMode(s.payMode || 'timeband', false);
-  renderBandRows();
-  renderBonusRows();
+  renderBandRows(); renderBonusRows();
   document.getElementById('settingsOverlay').classList.add('open');
 }
 
@@ -1917,18 +1606,15 @@ function renderBandRows() {
     row.innerHTML = `
       <div class="form-group">
         <label>${t('bandFrom')}</label>
-        <input class="band-from" type="text" placeholder="e.g. 6AM" value="${b.from||''}"
-          oninput="_bandList[${i}].from=this.value;saveSettings()">
+        <input class="band-from" type="text" placeholder="e.g. 6AM" value="${b.from||''}" oninput="_bandList[${i}].from=this.value;saveSettings()">
       </div>
       <div class="form-group">
         <label>${t('bandTo')} <span style="color:var(--muted);font-size:9px">${t('bandToSub')}</span></label>
-        <input class="band-to" type="text" placeholder="e.g. 9AM" value="${b.to||''}"
-          oninput="_bandList[${i}].to=this.value;saveSettings()">
+        <input class="band-to" type="text" placeholder="e.g. 9AM" value="${b.to||''}" oninput="_bandList[${i}].to=this.value;saveSettings()">
       </div>
       <div class="form-group">
         <label>${t('bandRate')}</label>
-        <input class="band-rate" type="number" placeholder="0" value="${b.rate||''}"
-          oninput="_bandList[${i}].rate=parseFloat(this.value)||0;saveSettings()">
+        <input class="band-rate" type="number" placeholder="0" value="${b.rate||''}" oninput="_bandList[${i}].rate=parseFloat(this.value)||0;saveSettings()">
       </div>
       <button class="ded-del" onclick="_bandList.splice(${i},1);renderBandRows();saveSettings()">×</button>
     `;
@@ -1936,20 +1622,15 @@ function renderBandRows() {
   });
 }
 
-function addBand() {
-  _bandList.push({ from: '', to: '', rate: 0 });
-  renderBandRows();
-}
+function addBand() { _bandList.push({ from: '', to: '', rate: 0 }); renderBandRows(); }
 
 function closeSettings() {
   saveSettings();
   document.getElementById('settingsOverlay').classList.remove('open');
 }
-
 function closeSettingsOutside(e) {
   if (e.target === document.getElementById('settingsOverlay')) closeSettings();
 }
-
 function setPayMode(mode, doSave = true) {
   document.querySelectorAll('.pay-mode-tab').forEach(t => t.classList.toggle('active', t.dataset.mode === mode));
   document.getElementById('pmTimeband').style.display = mode === 'timeband' ? '' : 'none';
@@ -1958,7 +1639,6 @@ function setPayMode(mode, doSave = true) {
   if (doSave) saveSettings();
 }
 
-/* Bonus rows (monthly mode) */
 function renderBonusRows() {
   const c = document.getElementById('bonusRows');
   c.innerHTML = '';
@@ -1973,14 +1653,7 @@ function renderBonusRows() {
     c.appendChild(row);
   });
 }
-
-function addBonus() {
-  _bonusList.push({ name: '', amount: 0 });
-  renderBonusRows();
-}
-
-// Legacy stub (no longer needed but kept so old HTML refs don't break)
-function toggleHourlyMode() { setPayMode('hourly'); }
+function addBonus() { _bonusList.push({ name: '', amount: 0 }); renderBonusRows(); }
 
 function toggleWeekView() {
   const s = getSettings();
@@ -1992,7 +1665,7 @@ function toggleWeekView() {
 }
 
 /* ── DYNAMIC SHIFT ROWS ── */
-let shiftRows = [{ s: '', e: '', a: '' }]; // start with 1 row
+let shiftRows = [{ s: '', e: '', a: '' }];
 
 function renderShiftList() {
   const c = document.getElementById('shiftList');
@@ -2017,28 +1690,17 @@ function renderShiftList() {
     `;
     c.appendChild(div);
   });
-  // Show/hide add button (max 5 shifts)
   document.getElementById('addShiftBtn').style.display = shiftRows.length >= 5 ? 'none' : '';
 }
 
-function addShiftRow() {
-  shiftRows.push({ s: '', e: '', a: '' });
-  renderShiftList();
-}
-
-function removeShiftRow(i) {
-  shiftRows.splice(i, 1);
-  renderShiftList();
-  recalcHours();
-}
+function addShiftRow() { shiftRows.push({ s: '', e: '', a: '' }); renderShiftList(); }
+function removeShiftRow(i) { shiftRows.splice(i, 1); renderShiftList(); recalcHours(); }
 
 function timeInputToMinutes(val) {
-  // val is "HH:MM" from type=time
   if (!val) return null;
   const [h, m] = val.split(':').map(Number);
   return h * 60 + (m || 0);
 }
-
 function minutesToTimeInput(mins) {
   if (mins === null) return '';
   const h = Math.floor(mins / 60) % 24;
@@ -2060,10 +1722,7 @@ function calcShiftRow(i) {
     } else if (cfg.payMode === 'timeband') {
       amt = calcAmountFromMins(sMin, eMin);
     }
-    if (amt > 0) {
-      row.a = amt;
-      renderShiftList();
-    }
+    if (amt > 0) { row.a = amt; renderShiftList(); }
   }
   recalcHours();
 }
@@ -2086,7 +1745,6 @@ function calcAmountFromMins(startMin, endMin) {
 }
 
 function recalcHours() {
-  // Auto-fill total hours from shift times
   let totalMins = 0;
   shiftRows.forEach(row => {
     const sMin = timeInputToMinutes(row.s);
@@ -2100,7 +1758,7 @@ function recalcHours() {
   }
 }
 
-/* ── RATE AUTO-CALC ── */
+/* ── TOGGLES ── */
 let isHoliday = false;
 let isAbsent = false;
 let isOT = false;
@@ -2120,7 +1778,6 @@ function toggleAbsent() {
   const knob = document.getElementById('absentKnob');
   tog.style.background = isAbsent ? 'var(--red)' : 'var(--border)';
   knob.style.left = isAbsent ? '22px' : '2px';
-  // Hide/show shift rows when absent
   const sl = document.getElementById('shiftList');
   const ab = document.getElementById('addShiftBtn');
   const fh = document.getElementById('fHours');
@@ -2135,7 +1792,7 @@ function toggleAbsent() {
 }
 
 function toggleOT() {
-  if (isAbsent) return; // can't be OT and absent
+  if (isAbsent) return;
   isOT = !isOT;
   syncOTToggle();
 }
@@ -2143,6 +1800,7 @@ function toggleOT() {
 function syncOTToggle() {
   const tog = document.getElementById('otToggle');
   const knob = document.getElementById('otKnob');
+  if (!tog) return;
   tog.style.background = isOT ? 'var(--accent2)' : 'var(--border)';
   knob.style.left = isOT ? '22px' : '2px';
 }
@@ -2163,7 +1821,6 @@ function onNoteChange() {
 function parseTimeToMinutes(str) {
   if (!str) return null;
   str = str.trim().toUpperCase().replace(/\s+/g,'');
-  // Formats: 6AM, 11AM, 5PM, 6:30AM, 13:00
   const m12 = str.match(/^(\d{1,2})(?::(\d{2}))?(AM|PM)$/);
   if (m12) {
     let h = parseInt(m12[1]);
@@ -2175,17 +1832,10 @@ function parseTimeToMinutes(str) {
   }
   const m24 = str.match(/^(\d{1,2}):(\d{2})$/);
   if (m24) return parseInt(m24[1]) * 60 + parseInt(m24[2]);
-  // Plain hour like "6" or "11"
   const mPlain = str.match(/^(\d{1,2})$/);
   if (mPlain) return parseInt(mPlain[1]) * 60;
   return null;
 }
-
-function calcAmount(startMin, endMin) {
-  return calcAmountFromMins(startMin, endMin);
-}
-
-/* autoCalcShift replaced by calcShiftRow in dynamic shift system */
 
 /* ── BULK DELETE ── */
 let selectMode = false;
@@ -2221,16 +1871,13 @@ function bulkDelete() {
   save(); render();
 }
 
-
 /* ── NAME LOGIN ── */
 (function initNameScreen() {
   const savedName = localStorage.getItem('sbt_username');
-  const screen = document.getElementById('nameScreen');
   const greeting = document.getElementById('nsGreeting');
   const hint = document.getElementById('nsHint');
   const footer = document.getElementById('nsFooter');
   const input = document.getElementById('nsInput');
-
   if (savedName) {
     greeting.textContent = 'WELCOME BACK, ' + savedName.toUpperCase() + '!';
     hint.textContent = 'Type your name to confirm it\'s you.';
@@ -2240,8 +1887,6 @@ function bulkDelete() {
     hint.textContent = 'Enter your name to get started. This keeps your data personal to you.';
     footer.textContent = 'Your name is saved locally on this device.';
   }
-
-  // Auto-focus the input
   setTimeout(() => input.focus(), 100);
 })();
 
@@ -2255,25 +1900,18 @@ function nsSubmit() {
   const val = document.getElementById('nsInput').value.trim();
   if (!val) return;
   const savedName = localStorage.getItem('sbt_username');
-
   if (savedName) {
-    // Must match saved name (case-insensitive)
     if (val.toLowerCase() !== savedName.toLowerCase()) {
       document.getElementById('nsError').textContent = 'Name doesn\'t match. Try again.';
       document.getElementById('nsInput').style.borderColor = 'var(--red)';
-      setTimeout(() => {
-        document.getElementById('nsInput').style.borderColor = '';
-      }, 1000);
+      setTimeout(() => { document.getElementById('nsInput').style.borderColor = ''; }, 1000);
       return;
     }
   } else {
-    // First time — save this name
     localStorage.setItem('sbt_username', val);
-    // Also pre-fill the worker name in settings
     const s = JSON.parse(localStorage.getItem('sbt_settings_v5') || '{}');
     if (!s.workerName) { s.workerName = val; localStorage.setItem('sbt_settings_v5', JSON.stringify(s)); }
   }
-
   document.getElementById('nameScreen').classList.add('hidden');
 }
 
